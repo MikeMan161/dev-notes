@@ -1,0 +1,3 @@
+- A list comprehension is a tool for creating lists by iterating over an iterable and optionally applying a condition
+- use list comprehensions instead of loops when you want concise, readable code that performs transformations or filtering
+- you can add conditional logic to a list comprehension by includin an if statement within the comprehensino
