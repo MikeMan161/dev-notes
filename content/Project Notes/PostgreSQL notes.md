@@ -32,3 +32,6 @@ suggested tables:
 - transactions
 - debts
 - income
+
+[[Database Notes]]
+

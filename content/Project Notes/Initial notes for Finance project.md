@@ -4,6 +4,7 @@
 Frontend: FastAPI and Typescript
 Backend: FastAPI and Python
 Database: PostgreSQL
+[[Database Notes]]
 Ai Layer: Claude
 Deployment: AWS (Elastic Beanstalk + RDS)
 optional: FRED API for economic benchmarks
