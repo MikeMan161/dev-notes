@@ -1,0 +1,27 @@
+now that I've setup the database, I'm going to start working on the backend. I'm using FastAPI, I already decided to use python for the backend, so FastAPI works perfectly fine for what I'm making
+
+## Endpoints/Routes:
+- A route/endpoint is a specific URL that an API exposes that does something. for example:
+	- GET /transactions gives all transactions
+	- POST /transactions creates a new transaction
+	- DELETE /transactions/123 delete transaction with id 123
+- Each of these is a separate endpoint. the frontend calls these URLs to interact with the database. it never touches the database directly for security reasons, only through these doors
+
+## HTTP methods:
+- These methods define the intent of a request from a frontend:
+	- GET: read something, fetch data
+	- POST: create something new
+	- PUT/PATCH: update something existing
+	- DELETE: delete something
+
+## Request/Response Cycle:
+- every interaction between the frontend and backend follows this cycle:
+	1. frontend sends a request "i want all transactions for user 123"
+	2. backend receives it, talks to database, processes result
+	3. backend sends back a response, the data in JSON format, plus a status code
+		- 200 Success
+		- 201 created successfully
+		- 400 bad request (sent something wrong)
+		- 401 unauthorized (not logged in)
+		- 404 not found
+		- 500 server error
