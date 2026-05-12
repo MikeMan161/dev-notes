@@ -3,6 +3,7 @@
 ## The stack:
 Frontend: FastAPI and Typescript
 Backend: FastAPI and Python
+[[Backend notes]]
 Database: PostgreSQL
 [[Database Notes]]
 Ai Layer: Claude
