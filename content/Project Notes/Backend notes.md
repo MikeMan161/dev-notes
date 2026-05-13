@@ -25,3 +25,21 @@ now that I've setup the database, I'm going to start working on the backend. I'm
 		- 401 unauthorized (not logged in)
 		- 404 not found
 		- 500 server error
+
+now i've installed FastAPI, and Uvicorn and was able to get a page running in the browser. 
+
+- An origin is a combination of protocol, domain, and port.
+- Normally, different origins are unable to communicate. you must allow this by having a list of "allowed origins"
+- import CORSMiddleware to configure what origins are allowed, and specify whether the back end allows credentials, specific http methods, and specific http headers
+
+I did a lot of reseraching within the FastAPI docs, and I learned a lot. Dependencies, Sessions, Engines. 
+
+Here is the flow currently:
+1. User clicks something on the frontend
+2. frontend sents HTTP request to unicorn
+3. Uvicorn passes it to FastAPI
+4. FastAPI matches URL to a route
+5. FastAPI runs dependencies - opens a database session, verifies auth token
+6. route handler runs, uses the session to query PostgreSQL
+7. response sent back to frontend as JSON
+
