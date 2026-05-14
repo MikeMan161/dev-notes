@@ -9,3 +9,9 @@ sudoku example:
 - Sub-box size N = 3
 - since the total grid is 9x9, thre are 9//3 = 3 groups per size
 - the formula becomes (r//3) x 3 + (c//3)
+
+Why it works: integer division strips the remainder so all cells in the same box collapse to the same index
+
+The inverse:
+row = index // cols
+col = index % cols

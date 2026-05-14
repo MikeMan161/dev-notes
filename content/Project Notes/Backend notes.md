@@ -43,3 +43,14 @@ Here is the flow currently:
 6. route handler runs, uses the session to query PostgreSQL
 7. response sent back to frontend as JSON
 
+Right now i'm essentially working from back to front, so right now i'm working on number 6, setting up the session.
+I installed SQLAlchemy, and created the models!
+In this architecture, SQLAlchemy is what keeps track of the tables, essentially defining them so that the API can interact through the data using schemas. 
+- the models are essentially mirrors of the database tables. I create them so that SQL alchemy knows how to translate between python objects and postgresql rows. 
+- each class inherits from base so sqlalchemy registers it as a table. 
+- columns are defined so sqlalchemy knows the structure. 
+- relationships are also defined with back_populates, so it can navigate between related tables in both directions. 
+
+Important distinction: FastAPI doesn't use models directly, it uses schemas. Models talk to the database, schemas talk to the outside world.
+
+pydantic

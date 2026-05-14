@@ -61,8 +61,8 @@ database ideas based on i will teach you to be rich:
 automation is a huge factor: focus on how the data gets into the system (csv uploads or api pulls) so the system runs while a user sleeps
 
 identify ghost subscriptions
-[[Important Commands]]
-[[Important Terminal Commands]]
+[[CLI Reference]]
+[[Bash Commands]]
 [[Cyberdeck and Homelab Resources]]
 [[Roadmap]]
 [[PostgreSQL notes]]
