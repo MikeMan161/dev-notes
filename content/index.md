@@ -7,3 +7,6 @@ This index file is sort of the main hub of this vault, below I'll provide links 
 
 # Technical Growth:
 [[Neetcode 150]]
+
+# AI Usage:
+[[Notes on AI]]
