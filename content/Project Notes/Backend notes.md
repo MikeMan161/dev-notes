@@ -35,3 +35,7 @@ now i've installed FastAPI, and Uvicorn and was able to get a page running in th
 More information on FastAPI, SQLAlchemy, and Pydantic. 
 [[FastAPI, SQLAlchemy, and Pydantic]]
 
+More information on Authentication
+[[Authentication]]
+
+

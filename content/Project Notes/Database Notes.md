@@ -13,4 +13,6 @@ so right now, we have 6 entities in this database:
 
 Here is the finished ER diagram! There are a few additions i made as I was making the diagram. namely the addition of the Savings Goals table. I felt like this was a worthy addition to the database, as i can independently keep track of major savings goals that someone may have, like vacation funds. I also added a delete_at column to transactions and savings goals, so i can have a way of not only keeping track of when a person creates,updates, and deletes a transaction/saving goal, but that also allows me to "soft delete" transactions so they can be restored if deleted accidentally.
 
+[[PostgreSQL notes]]
 After this, i went straight ahead into making the queries to create the database! I was already pretty familiar with SQL so it was pretty easy. now the database is setup in postgresql!!!
+
