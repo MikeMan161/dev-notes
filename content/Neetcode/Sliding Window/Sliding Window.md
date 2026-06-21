@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-06-19 13:40
+lastmod: 2026-06-20 18:13
 date: 2026-05-21 22:00
 ---
 Sliding window is a two-pointer approach where one pointer leads and the other follows. The region between them is the "window". This technique is mainly used to solve subarray problems, such as finding the longest or shortest subarray that satisfies a given condition. 
@@ -41,3 +41,4 @@ With this framework, whenever i face a substring/subarray problem, I just need t
 After answering all 3, I can solve any sliding window problem. 
 
 [[Best time to buy and sell stock]]
+[[Longest Substring Without Repeating Characters]]
