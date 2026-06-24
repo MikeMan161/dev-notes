@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-06-22 17:49
+lastmod: 2026-06-23 21:26
 date: 2026-06-20 22:17
 ---
 
@@ -16,17 +16,17 @@ date: 2026-06-20 22:17
 
 ## Arrays & Hashing
 
-|Problem|Last Solved|Attempt 1|Attempt 2|Attempt 3|Attempt 4|Attempt 5|
-|---|---|---|---|---|---|---|
-|1|||||||
-|2|||||||
-|3|||||||
-|4|||||||
-|5|||||||
-|6|||||||
-|7|||||||
-|8|||||||
-|9|||||||
+| Problem                | Last Solved | Attempt 1 | Attempt 2 | Attempt 3 | Attempt 4 | Attempt 5 |
+| ---------------------- | ----------- | --------- | --------- | --------- | --------- | --------- |
+| [[Contains Duplicate]] |             | :/        |           |           |           |           |
+| [[Valid Anagram]]      | 6/23        | :/        | :)        |           |           |           |
+| 3                      |             |           |           |           |           |           |
+| 4                      |             |           |           |           |           |           |
+| 5                      |             |           |           |           |           |           |
+| 6                      |             |           |           |           |           |           |
+| 7                      |             |           |           |           |           |           |
+| 8                      |             |           |           |           |           |           |
+| 9                      |             |           |           |           |           |           |
 
 ---
 
@@ -50,8 +50,8 @@ date: 2026-06-20 22:17
 | [[Longest Substring Without Repeating Characters]] | 6/20        | :/        |           |           |           |           |
 | [[Longest Repeating Character Replacement]]        | 6/21        | :/        |           |           |           |           |
 | [[Permutation in String]]                          | 6/22        | :(        |           |           |           |           |
-| 19                                                 |             |           |           |           |           |           |
-| 20                                                 |             |           |           |           |           |           |
+| [[Minimum Window Substring]]                       | 6/23        | :(        |           |           |           |           |
+| [[Sliding Window Maximum]]                         | 6/23        |           |           |           |           |           |
 
 ---
 

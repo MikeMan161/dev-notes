@@ -9,4 +9,4 @@ This index file is sort of the main hub of this vault, below I'll provide links 
 [[Neetcode 150]]
 
 # AI Usage:
-[[Notes on AI]]
+[[Implementing AI into my workflow]]

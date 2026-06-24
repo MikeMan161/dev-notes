@@ -1,3 +1,7 @@
+---
+lastmod: 2026-06-23 15:14
+date: 2026-06-22 22:00
+---
 now that I've setup the database, I'm going to start working on the backend. I'm using FastAPI, I already decided to use python for the backend, so FastAPI works perfectly fine for what I'm making
 
 ## Endpoints/Routes:
@@ -38,4 +42,5 @@ More information on FastAPI, SQLAlchemy, and Pydantic.
 More information on Authentication
 [[Authentication]]
 
-
+More information on routes
+[[Routes]]
