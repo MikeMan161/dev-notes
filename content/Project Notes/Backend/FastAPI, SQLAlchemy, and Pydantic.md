@@ -1,3 +1,7 @@
+---
+lastmod: 2026-06-30 13:05
+date: 2026-06-29 22:00
+---
 I did a lot of researching within the FastAPI docs, and I learned a lot. Dependencies, Sessions, Engines, and I also learned about the other tools I'll be using for the backend: SQLAlchemy and Pydantic.
 
 - Pydantic is a gatekeeper on both ends of the flow. it controls what comes in and out
@@ -22,3 +26,19 @@ In this architecture, SQLAlchemy is what keeps track of the database tables, ess
 - relationships are also defined with back_populates, so it can navigate between related tables in both directions. 
 
 Pydantic is essentially used to validate that the incoming data matches the schema. if something is missing, like an email, it rejects before it touches the database. this also applies for after the request comes back from the database. it converts it to a userreturns schema, stripping out sensitive fields like hashed_password that shouldnt leave the server.
+
+What is a decorator?
+
+class UserCreate(BaseModel):
+
+    username: str
+    email: EmailStr
+    password: str
+    currency: str 
+
+    @field_validator("currency")
+    @classmethod
+    def validate_currency(cls, value: str) -> str:
+        return _validate_currency_code(value)
+
+In this example, we have a UserCreate Schema, for when a user creates an account.
