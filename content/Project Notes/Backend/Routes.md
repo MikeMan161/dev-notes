@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-06-24 16:16
+lastmod: 2026-07-04 13:27
 date: 2026-06-23 22:04
 ---
 References:
@@ -20,3 +20,5 @@ APIRouter is essentially a mini fastapi class
 ## How do Relative Imports work?
 a .. import is a relative import. say we want to call a dependency in app/dependencies, while in a file in app/routers/items
 if you use a single . in .dependencies, it would search for an imaginary dependencies file in the current package, which in this example is routers. if you use a double .. , then it would search in app/ and find the right module. essentially, the first dot tells the program to search the current directory, and each subsequent one brings the level up 1 directory. so one dot searches the current directory routers, 2 goes to app, 3 would go to an imaginary parent of that, etc. 
+
+

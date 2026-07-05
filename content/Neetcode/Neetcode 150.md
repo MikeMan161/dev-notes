@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-06-25 14:24
+lastmod: 2026-07-04 21:51
 date: 2026-06-20 22:00
 ---
 I'm practicing the Neetcode 150 every day to get experience solving complicated computing problems
@@ -65,7 +65,7 @@ In these notes, I'll essentially be writing my thoughts down as I'm solving each
 | Problem               | Last Solved | Attempt 1 | Attempt 2 | Attempt 3 | Attempt 4 | Attempt 5 |
 | --------------------- | ----------- | --------- | --------- | --------- | --------- | --------- |
 | [[Valid Parentheses]] | 6/25        |           |           |           |           |           |
-| 22                    |             |           |           |           |           |           |
+| Min Stack             | 7/4         |           |           |           |           |           |
 | 23                    |             |           |           |           |           |           |
 | 24                    |             |           |           |           |           |           |
 | 25                    |             |           |           |           |           |           |
