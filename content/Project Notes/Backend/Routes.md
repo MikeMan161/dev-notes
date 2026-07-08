@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-07-06 17:14
+lastmod: 2026-07-07 17:13
 date: 2026-06-23 22:04
 ---
 References:
@@ -27,3 +27,5 @@ so here's the correct mental model for future reference:
 - Standard CRUD = create, list, get-one, update, delete
 - Soft-delete tables = add a restore route, their delete sets deleted_at instead of removing, and all reads filter deleted_at is null
 - Hard-delete tables = do a real db.delete() and have no restore.
+
+I think I've definitely got the routers down! I fully understand the basic design of one, and I was able to write a file completely on my own, so now I'm going to finish writing them all up. 
