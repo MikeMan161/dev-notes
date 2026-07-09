@@ -1,3 +1,7 @@
+---
+lastmod: 2026-07-08 15:07
+date: 2026-07-07 22:00
+---
 # Git: 
 git status
 git add .
@@ -18,3 +22,4 @@ uvicorn folder.file:(fastAPI instance variable in file) --reload (run uvicorn)
 # Virtual Environment:
 (while in folder) venv\scripts\activate
 deactivate
+

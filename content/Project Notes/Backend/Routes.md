@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-07-07 17:13
+lastmod: 2026-07-08 17:34
 date: 2026-06-23 22:04
 ---
 References:
@@ -29,3 +29,5 @@ so here's the correct mental model for future reference:
 - Hard-delete tables = do a real db.delete() and have no restore.
 
 I think I've definitely got the routers down! I fully understand the basic design of one, and I was able to write a file completely on my own, so now I'm going to finish writing them all up. 
+
+Done! I started up Uvicorn, and i went to the fast api docs. I tested the routes, and they work! I do have some stuff to fix, like one of my routes didn't check if the category_id was correct, and the input made it all the way to the database. the database caught that it was not correct, so it crashed. I need to add a check in the POST routers to ensure that any given id passed in is correct, not just rely on the database crashing. 
