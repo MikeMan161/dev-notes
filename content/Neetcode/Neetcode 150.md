@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-07-04 21:51
+lastmod: 2026-07-12 21:51
 date: 2026-06-20 22:00
 ---
 I'm practicing the Neetcode 150 every day to get experience solving complicated computing problems
@@ -62,15 +62,15 @@ In these notes, I'll essentially be writing my thoughts down as I'm solving each
 
 ## [[Stacks]]
 
-| Problem               | Last Solved | Attempt 1 | Attempt 2 | Attempt 3 | Attempt 4 | Attempt 5 |
-| --------------------- | ----------- | --------- | --------- | --------- | --------- | --------- |
-| [[Valid Parentheses]] | 6/25        |           |           |           |           |           |
-| Min Stack             | 7/4         |           |           |           |           |           |
-| 23                    |             |           |           |           |           |           |
-| 24                    |             |           |           |           |           |           |
-| 25                    |             |           |           |           |           |           |
-| 26                    |             |           |           |           |           |           |
-| 27                    |             |           |           |           |           |           |
+| Problem                              | Last Solved | Attempt 1 | Attempt 2 | Attempt 3 | Attempt 4 | Attempt 5 |
+| ------------------------------------ | ----------- | --------- | --------- | --------- | --------- | --------- |
+| [[Valid Parentheses]]                | 6/25        | :)        |           |           |           |           |
+| [[Min Stack]]                        | 7/4         | :/        |           |           |           |           |
+| [[Evaluate Reverse Polish Notation]] | 7/12        | :)        |           |           |           |           |
+| 24                                   |             |           |           |           |           |           |
+| 25                                   |             |           |           |           |           |           |
+| 26                                   |             |           |           |           |           |           |
+| 27                                   |             |           |           |           |           |           |
 
 ---
 
