@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-07-12 21:51
+lastmod: 2026-07-13 18:10
 date: 2026-06-20 22:00
 ---
 I'm practicing the Neetcode 150 every day to get experience solving complicated computing problems
@@ -67,9 +67,9 @@ In these notes, I'll essentially be writing my thoughts down as I'm solving each
 | [[Valid Parentheses]]                | 6/25        | :)        |           |           |           |           |
 | [[Min Stack]]                        | 7/4         | :/        |           |           |           |           |
 | [[Evaluate Reverse Polish Notation]] | 7/12        | :)        |           |           |           |           |
-| 24                                   |             |           |           |           |           |           |
-| 25                                   |             |           |           |           |           |           |
-| 26                                   |             |           |           |           |           |           |
+| [[Daily Temperatures]]               | 7/13        | :(        |           |           |           |           |
+| [[Car Fleet]]                        | 7/13        | :)        |           |           |           |           |
+| [[Largest Rectangle in Histogram]]   | 7/13        |           |           |           |           |           |
 | 27                                   |             |           |           |           |           |           |
 
 ---
