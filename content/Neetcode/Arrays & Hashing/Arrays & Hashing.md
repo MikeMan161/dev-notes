@@ -14,5 +14,5 @@ Patterns to remember:
 - Frequency counting - Dict or Counter
 - Duplicate detection - set
 - Precomputing Values - prefix arrays (left/right pass)
-- 2D to 1D indexing - [[Grouping sub-grids or tiles]]
+- 2D to 1D indexing - [[Matrix Notes]]
 - Finding Sequence starts - check if n-1 is in set

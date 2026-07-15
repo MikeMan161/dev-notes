@@ -1,3 +1,7 @@
+---
+lastmod: 2026-07-14 13:30
+date: 2026-07-13 22:00
+---
 Given a 9x9 board (board), it is valid only if:
 - Each row must contain the digits 1-9 without duplicates
 - each column must contain the digits 1-9 without duplicates
@@ -108,4 +112,4 @@ the solution is something i would not have come up with myself. given these "coo
 
 this would give us the indexes we need to make sure we're checking the right set for each box
 
-for normalization formula: [[Grouping sub-grids or tiles]]
+for normalization formula: [[Matrix Notes]]

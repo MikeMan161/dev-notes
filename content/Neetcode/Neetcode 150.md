@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-07-13 18:10
+lastmod: 2026-07-14 21:41
 date: 2026-06-20 22:00
 ---
 I'm practicing the Neetcode 150 every day to get experience solving complicated computing problems
@@ -23,7 +23,7 @@ In these notes, I'll essentially be writing my thoughts down as I'm solving each
 
 | Problem                | Last Solved | Attempt 1 | Attempt 2 | Attempt 3 | Attempt 4 | Attempt 5 |
 | ---------------------- | ----------- | --------- | --------- | --------- | --------- | --------- |
-| [[Contains Duplicate]] |             | :/        |           |           |           |           |
+| [[Contains Duplicate]] | 7/14        | :/        | :)        |           |           |           |
 | [[Valid Anagram]]      | 6/23        | :/        | :)        |           |           |           |
 | 3                      |             |           |           |           |           |           |
 | 4                      |             |           |           |           |           |           |
@@ -69,22 +69,22 @@ In these notes, I'll essentially be writing my thoughts down as I'm solving each
 | [[Evaluate Reverse Polish Notation]] | 7/12        | :)        |           |           |           |           |
 | [[Daily Temperatures]]               | 7/13        | :(        |           |           |           |           |
 | [[Car Fleet]]                        | 7/13        | :)        |           |           |           |           |
-| [[Largest Rectangle in Histogram]]   | 7/13        |           |           |           |           |           |
+| [[Largest Rectangle in Histogram]]   | 7/13        | :(        |           |           |           |           |
 | 27                                   |             |           |           |           |           |           |
 
 ---
 
 ## [[Binary Search]]
 
-|Problem|Last Solved|Attempt 1|Attempt 2|Attempt 3|Attempt 4|Attempt 5|
-|---|---|---|---|---|---|---|
-|28|||||||
-|29|||||||
-|30|||||||
-|31|||||||
-|32|||||||
-|33|||||||
-|34|||||||
+| Problem                   | Last Solved | Attempt 1 | Attempt 2 | Attempt 3 | Attempt 4 | Attempt 5 |
+| ------------------------- | ----------- | --------- | --------- | --------- | --------- | --------- |
+| [[Binary Search Problem]] | 7/14        | :)        |           |           |           |           |
+| [[Search a 2D Matrix]]    | 7/14        |           |           |           |           |           |
+| 30                        |             |           |           |           |           |           |
+| 31                        |             |           |           |           |           |           |
+| 32                        |             |           |           |           |           |           |
+| 33                        |             |           |           |           |           |           |
+| 34                        |             |           |           |           |           |           |
 
 ---
 
