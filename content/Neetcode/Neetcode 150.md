@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-07-14 21:41
+lastmod: 2026-07-16 16:00
 date: 2026-06-20 22:00
 ---
 I'm practicing the Neetcode 150 every day to get experience solving complicated computing problems
@@ -25,7 +25,7 @@ In these notes, I'll essentially be writing my thoughts down as I'm solving each
 | ---------------------- | ----------- | --------- | --------- | --------- | --------- | --------- |
 | [[Contains Duplicate]] | 7/14        | :/        | :)        |           |           |           |
 | [[Valid Anagram]]      | 6/23        | :/        | :)        |           |           |           |
-| 3                      |             |           |           |           |           |           |
+| [[Two Sum]]            | 7/14        | :/        | :)        |           |           |           |
 | 4                      |             |           |           |           |           |           |
 | 5                      |             |           |           |           |           |           |
 | 6                      |             |           |           |           |           |           |
@@ -37,13 +37,13 @@ In these notes, I'll essentially be writing my thoughts down as I'm solving each
 
 ## [[Two Pointers]]
 
-|Problem|Last Solved|Attempt 1|Attempt 2|Attempt 3|Attempt 4|Attempt 5|
-|---|---|---|---|---|---|---|
-|10|||||||
-|11|||||||
-|12|||||||
-|13|||||||
-|14|||||||
+| Problem              | Last Solved | Attempt 1 | Attempt 2 | Attempt 3 | Attempt 4 | Attempt 5 |
+| -------------------- | ----------- | --------- | --------- | --------- | --------- | --------- |
+| [[Valid Palindrome]] | 7/14        | :/        | :)        |           |           |           |
+| 11                   |             |           |           |           |           |           |
+| 12                   |             |           |           |           |           |           |
+| 13                   |             |           |           |           |           |           |
+| 14                   |             |           |           |           |           |           |
 
 ---
 
@@ -76,15 +76,15 @@ In these notes, I'll essentially be writing my thoughts down as I'm solving each
 
 ## [[Binary Search]]
 
-| Problem                   | Last Solved | Attempt 1 | Attempt 2 | Attempt 3 | Attempt 4 | Attempt 5 |
-| ------------------------- | ----------- | --------- | --------- | --------- | --------- | --------- |
-| [[Binary Search Problem]] | 7/14        | :)        |           |           |           |           |
-| [[Search a 2D Matrix]]    | 7/14        |           |           |           |           |           |
-| 30                        |             |           |           |           |           |           |
-| 31                        |             |           |           |           |           |           |
-| 32                        |             |           |           |           |           |           |
-| 33                        |             |           |           |           |           |           |
-| 34                        |             |           |           |           |           |           |
+| Problem                                  | Last Solved | Attempt 1 | Attempt 2 | Attempt 3 | Attempt 4 | Attempt 5 |
+| ---------------------------------------- | ----------- | --------- | --------- | --------- | --------- | --------- |
+| [[Binary Search Problem]]                | 7/14        | :)        |           |           |           |           |
+| [[Search a 2D Matrix]]                   | 7/14        | :/        |           |           |           |           |
+| [[Koko Eating Bananas]]                  | 7/15        | :/        |           |           |           |           |
+| [[Find Minimum in Rotated Sorted Array]] | 7/15        | :/        |           |           |           |           |
+| [[Search in Rotated Sorted Array]]       |             | :(        |           |           |           |           |
+| 33                                       |             |           |           |           |           |           |
+| 34                                       |             |           |           |           |           |           |
 
 ---
 
