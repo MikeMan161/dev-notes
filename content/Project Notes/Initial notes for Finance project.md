@@ -1,7 +1,12 @@
+---
+lastmod: 2026-07-17 20:01
+date: 2026-07-17 15:59
+---
 # This project will be a financial dashboard. it will be a full stack project
 
 ## The stack:
 Frontend: FastAPI and Typescript
+[[Frontend Stack]]
 Backend: FastAPI and Python
 [[Backend notes]]
 Database: PostgreSQL

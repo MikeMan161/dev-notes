@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-07-17 15:19
+lastmod: 2026-07-17 17:18
 date: 2026-07-17 13:20
 ---
 To add an event handler, define a function and the npass it as a prop to the appropriate jsx tag
@@ -204,3 +204,5 @@ export default function Signup() {
 so remember:
 e.stopPropagation() stope event handlers attached to the tags above from firing
 e.preventDefault() prevents the default browser behavior for the few events that have it
+
+[doc link:] (https://react.dev/learn/responding-to-events)
