@@ -1,8 +1,10 @@
 ---
 date: 2026-07-18 12:00
-lastmod: 2026-07-18 12:00
+lastmod: 2026-07-19 14:36
 topic: Two Pointers
 url: https://neetcode.io/problems/max-water-container/question?list=neetcode150
+last-solved: 2026-07-19
+interval: 3
 ---
 this problem gives us an array heights, where each heights\[i] represents the height of the ith bar.
 

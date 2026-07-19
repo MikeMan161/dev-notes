@@ -1,8 +1,10 @@
 ---
 date: 2026-07-18 12:00
-lastmod: 2026-07-18 12:00
+lastmod: 2026-07-19 14:35
 topic: Arrays & Hashing
 url: https://neetcode.io/problems/longest-consecutive-sequence/question?list=neetcode150
+last-solved: 2026-07-19
+interval: 3
 ---
 We are given the constraint that the algorithm must be in O(n). the array of integers is not guaranteed to be in order in the original array.
 

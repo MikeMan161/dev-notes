@@ -1,8 +1,10 @@
 ---
 date: 2026-07-18 12:00
-lastmod: 2026-07-18 12:00
+lastmod: 2026-07-19 14:35
 topic: Two Pointers
 url: https://neetcode.io/problems/two-integer-sum-ii/question?list=neetcode150
+last-solved: 2026-07-19
+interval: 3
 ---
 Given an array of integers `numbers` that is sorted in **non-decreasing order**.
 

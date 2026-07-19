@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-07-18 21:08
+lastmod: 2026-07-19 14:14
 date: 2026-06-20 22:00
 ---
 I'm practicing the Neetcode 150 every day to get experience solving complicated computing problems
@@ -28,7 +28,7 @@ After each attempt, rate how it went and set the note's `interval` in frontmatte
 | [[Contains Duplicate]]           | 7/14        | :/        | :)        |           |           |           |
 | [[Valid Anagram]]                | 6/23        | :/        | :)        |           |           |           |
 | [[Two Sum]]                      | 7/14        | :/        | :)        |           |           |           |
-| [[Group Anagrams]]               |             |           |           |           |           |           |
+| [[Group Anagrams]]               | 7/19        | :/        | :/        |           |           |           |
 | [[Top K Frequent Elements]]      |             |           |           |           |           |           |
 | [[Encode and Decode Strings]]    |             |           |           |           |           |           |
 | [[Product of Array Except Self]] |             |           |           |           |           |           |
@@ -53,7 +53,7 @@ After each attempt, rate how it went and set the note's `interval` in frontmatte
 
 | Problem                                            | Last Solved | Attempt 1 | Attempt 2 | Attempt 3 | Attempt 4 | Attempt 5 |
 | -------------------------------------------------- | ----------- | --------- | --------- | --------- | --------- | --------- |
-| [[Best time to buy and sell stock]]                | 6/20        | :/        |           |           |           |           |
+| [[Best time to buy and sell stock]]                | 7/18        | :/        | :/        |           |           |           |
 | [[Longest Substring Without Repeating Characters]] | 6/20        | :/        |           |           |           |           |
 | [[Longest Repeating Character Replacement]]        | 6/21        | :/        |           |           |           |           |
 | [[Permutation in String]]                          | 6/22        | :(        |           |           |           |           |
