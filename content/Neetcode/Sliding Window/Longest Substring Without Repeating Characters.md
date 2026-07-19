@@ -1,6 +1,10 @@
 ---
-lastmod: 2026-06-20 22:13
 date: 2026-06-20 18:12
+lastmod: 2026-06-20 22:13
+topic: Sliding Window
+last-solved: 2026-06-20
+interval: 7
+url: https://neetcode.io/problems/longest-substring-without-duplicates/question?list=neetcode150
 ---
 
 Using that same technique from Sliding Window, I'll ask those 3 questions again:

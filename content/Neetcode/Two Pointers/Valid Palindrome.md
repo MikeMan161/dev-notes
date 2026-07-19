@@ -1,3 +1,11 @@
+---
+date: 2026-07-18 12:00
+lastmod: 2026-07-18 12:00
+topic: Two Pointers
+last-solved: 2026-07-14
+interval: 21
+url: https://neetcode.io/problems/is-palindrome/question?list=neetcode150
+---
 - So in this problem, it's asking me to read a string and determine if it's a palindrome. A palindrome is a word/sentence that reads the same forward and backwards.
 - also ignore all non-alphanumeric characters. 
 My initial thought is that we'd have to go through the string once to filter out the non-alphanumerical characters, but after some reflection we don't need to do that at all. I'd work, but that would leave us with O(n) space complexity, and the optimal is O(1).

@@ -1,3 +1,9 @@
+---
+date: 2026-07-18 12:00
+lastmod: 2026-07-18 12:00
+topic: Arrays & Hashing
+url: https://neetcode.io/problems/longest-consecutive-sequence/question?list=neetcode150
+---
 We are given the constraint that the algorithm must be in O(n). the array of integers is not guaranteed to be in order in the original array.
 
 since we want to stay at or under O(n), we can convert it into a set since they have a lookup of O(1), and then we can use sorted() to return a new sorted list from the iterable

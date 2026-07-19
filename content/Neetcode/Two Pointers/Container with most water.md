@@ -1,3 +1,9 @@
+---
+date: 2026-07-18 12:00
+lastmod: 2026-07-18 12:00
+topic: Two Pointers
+url: https://neetcode.io/problems/max-water-container/question?list=neetcode150
+---
 this problem gives us an array heights, where each heights\[i] represents the height of the ith bar.
 
 We'll definitely use two pointers here. I'm thinking that we use the typical two pointers formula, start the pointers at the end of each array. from what i understand, we have to find the container that has the maximum amount of water in it. 

@@ -1,6 +1,10 @@
 ---
-lastmod: 2026-06-23 16:26
 date: 2026-06-23 12:40
+lastmod: 2026-06-23 16:26
+topic: Sliding Window
+last-solved: 2026-06-23
+interval: 3
+url: https://neetcode.io/problems/minimum-window-with-characters/question?list=neetcode150
 ---
 Clarifying questions: I see that the question states that s and t consist of both uppercase and lowercase characters, so I need to account for both, and I assume that I have to treat them the same, so an "a" in s is the same as an "A" in t. also, i assume that I don't have to account for edge cases such as nonascii characters? I also see in example 3 that i should return an empty string if there is no valid answer, and if the string is empty. Also, i see that the question states that the output is always unique, so in my approach I'll return the output as soon as i find the first valid substring. 
 

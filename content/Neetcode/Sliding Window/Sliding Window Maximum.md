@@ -1,6 +1,10 @@
 ---
-lastmod: 2026-06-25 14:23
 date: 2026-06-23 22:04
+lastmod: 2026-06-25 14:23
+topic: Sliding Window
+last-solved: 2026-06-24
+interval: 7
+url: https://neetcode.io/problems/sliding-window-maximum/question?list=neetcode150
 ---
 Clarifying questions: So for this question, I see the constraints already answer a few questions i have, like what if k is negative, and there are constraints for how big nums.length is and if negative numbers are included in nums.
 

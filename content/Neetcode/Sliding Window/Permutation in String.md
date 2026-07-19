@@ -1,6 +1,10 @@
 ---
-lastmod: 2026-06-21 15:20
 date: 2026-06-21 15:00
+lastmod: 2026-06-21 15:20
+topic: Sliding Window
+last-solved: 2026-06-22
+interval: 3
+url: https://neetcode.io/problems/permutation-string/question?list=neetcode150
 ---
 Clarifying questions: So by permutation, I assume that means that I need to check whether a variation of s1 is a substring inside s2. the substring must be the same length of s1, and contain each character only once, reguardless of how it's ordered. so valid substrings of abc would be acb, cab, bac. it's specified that the string only contains lowercase letters, so i don't need to account for edge cases such as uppercase letters, nonalphanumeric/nonascii. and if there is no valid substring or the input is empty, return false
 
