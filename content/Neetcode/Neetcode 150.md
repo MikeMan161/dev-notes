@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-07-19 14:14
+lastmod: 2026-07-20 21:35
 date: 2026-06-20 22:00
 ---
 I'm practicing the Neetcode 150 every day to get experience solving complicated computing problems
@@ -84,7 +84,7 @@ After each attempt, rate how it went and set the note's `interval` in frontmatte
 | [[Koko Eating Bananas]]                  | 7/15        | :/        |           |           |           |           |
 | [[Find Minimum in Rotated Sorted Array]] | 7/15        | :/        |           |           |           |           |
 | [[Search in Rotated Sorted Array]]       | 7/15        | :(        |           |           |           |           |
-| [[Time Based Key Value Store]]           |             |           |           |           |           |           |
+| [[Time Based Key Value Store]]           | 7/20        | :/        |           |           |           |           |
 | [[Median of Two Sorted Arrays]]          |             |           |           |           |           |           |
 
 ---

@@ -1,6 +1,6 @@
 ---
 date: 2026-07-16 15:57
-lastmod: 2026-07-16 15:59
+lastmod: 2026-07-20 18:04
 topic: Binary Search
 last-solved: 2026-07-15
 interval: 3
