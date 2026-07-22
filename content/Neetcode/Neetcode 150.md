@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-07-20 21:35
+lastmod: 2026-07-21 13:31
 date: 2026-06-20 22:00
 ---
 I'm practicing the Neetcode 150 every day to get experience solving complicated computing problems
@@ -57,7 +57,7 @@ After each attempt, rate how it went and set the note's `interval` in frontmatte
 | [[Longest Substring Without Repeating Characters]] | 6/20        | :/        |           |           |           |           |
 | [[Longest Repeating Character Replacement]]        | 6/21        | :/        |           |           |           |           |
 | [[Permutation in String]]                          | 6/22        | :(        |           |           |           |           |
-| [[Minimum Window Substring]]                       | 6/23        | :(        |           |           |           |           |
+| [[Minimum Window Substring]]                       | 7/21        | :(        | :(        |           |           |           |
 | [[Sliding Window Maximum]]                         | 6/24        | :/        |           |           |           |           |
 
 ---

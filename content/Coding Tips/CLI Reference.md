@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-07-20 18:04
+lastmod: 2026-07-21 15:24
 date: 2026-07-07 22:00
 ---
 # Git: 
@@ -15,6 +15,10 @@ git switch branch-name
 git switch -c feature/branch-name  # creates AND switches in one command
 git remote -v
 git push --set-upstream origin branch-name
+git diff (path to file) shows differences between committed version and current version
+
+# If you need to restore a file to how it was in the last commit:
+git checkout -- (path to file) would restore that file.
 
 # Uvicorn: 
 uvicorn folder.file:(fastAPI instance variable in file) --reload (run uvicorn)

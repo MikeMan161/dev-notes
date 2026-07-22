@@ -1,8 +1,8 @@
 ---
 date: 2026-06-23 12:40
-lastmod: 2026-06-23 16:26
+lastmod: 2026-07-21 13:33
 topic: Sliding Window
-last-solved: 2026-06-23
+last-solved: 2026-07-21
 interval: 3
 url: https://neetcode.io/problems/minimum-window-with-characters/question?list=neetcode150
 ---
@@ -12,3 +12,5 @@ As for the uppercase/lowercase, I'll have to "sanitize" the input before i do an
 
 okay, this problem was very difficult, and i had to rely on the solution video to help me. I will return to this problem later. 
 
+# Attempt 2 Notes:
+- This time I was able to solve the logic on my own! The main issue that happened now is that I didn't write comments as i talked through the approach, so when it came time to code, I got lost in the implementation because i got tangled up in the details just kept track of in my head. This is a big problem I have to work on, but this is a good lesson as to why that's important
