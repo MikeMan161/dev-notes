@@ -1,9 +1,9 @@
 ---
 date: 2026-06-21 12:01
-lastmod: 2026-06-21 13:40
+lastmod: 2026-07-23 13:23
 topic: Sliding Window
-last-solved: 2026-06-21
-interval: 7
+last-solved: 2026-07-23
+interval: 21
 url: https://neetcode.io/problems/longest-repeating-substring-with-replacement/question?list=neetcode150
 ---
 Clarifying questions: Just so i understand, the goal is to return the length of the longest substring which contains only one character. Since the problem specifically states s only consists of uppercase english characters, i shouldn't have to worry about edge cases like if the characters are lowercase, non alphanumeric or non ASCII. I also assume that if s is empty I'd just return 0. Is this correct?

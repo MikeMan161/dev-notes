@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-07-17 17:18
+lastmod: 2026-07-23 11:16
 date: 2026-07-17 13:20
 ---
 To add an event handler, define a function and the npass it as a prop to the appropriate jsx tag

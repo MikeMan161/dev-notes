@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-07-21 13:31
+lastmod: 2026-07-23 13:24
 date: 2026-06-20 22:00
 ---
 I'm practicing the Neetcode 150 every day to get experience solving complicated computing problems
@@ -54,8 +54,8 @@ After each attempt, rate how it went and set the note's `interval` in frontmatte
 | Problem                                            | Last Solved | Attempt 1 | Attempt 2 | Attempt 3 | Attempt 4 | Attempt 5 |
 | -------------------------------------------------- | ----------- | --------- | --------- | --------- | --------- | --------- |
 | [[Best time to buy and sell stock]]                | 7/18        | :/        | :/        |           |           |           |
-| [[Longest Substring Without Repeating Characters]] | 6/20        | :/        |           |           |           |           |
-| [[Longest Repeating Character Replacement]]        | 6/21        | :/        |           |           |           |           |
+| [[Longest Substring Without Repeating Characters]] | 7/22        | :/        | :)        |           |           |           |
+| [[Longest Repeating Character Replacement]]        | 7/23        | :/        | :)        |           |           |           |
 | [[Permutation in String]]                          | 6/22        | :(        |           |           |           |           |
 | [[Minimum Window Substring]]                       | 7/21        | :(        | :(        |           |           |           |
 | [[Sliding Window Maximum]]                         | 6/24        | :/        |           |           |           |           |

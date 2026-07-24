@@ -1,9 +1,9 @@
 ---
 date: 2026-06-20 18:12
-lastmod: 2026-06-20 22:13
+lastmod: 2026-07-22 15:49
 topic: Sliding Window
-last-solved: 2026-06-20
-interval: 7
+last-solved: 2026-07-22
+interval: 21
 url: https://neetcode.io/problems/longest-substring-without-duplicates/question?list=neetcode150
 ---
 
@@ -19,3 +19,5 @@ final implementation:
 2. shrink left - as soon as the frequency goes over 1, remove the leftmost entry, as a duplicate entered the window
 3. update the result - after shrinking, window is valid, check against maxlength. if larger, replace.
 
+# Attempt 2 Notes:
+I was able to do this problem completely independently! No help, tips, nothing, I solved the logic and implementation all on my own. Great attempt on my end.
