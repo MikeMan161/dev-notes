@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-07-23 13:38
+lastmod: 2026-07-24 09:59
 date: 2026-07-08 15:26
 ---
 - to do: must go back and implement business-rule validation across all schemas. things like valid ranges and allowed values.

@@ -1,9 +1,9 @@
 ---
 date: 2026-06-23 22:04
-lastmod: 2026-06-25 14:23
+lastmod: 2026-07-24 11:16
 topic: Sliding Window
-last-solved: 2026-06-24
-interval: 7
+last-solved: 2026-07-24
+interval: 3
 url: https://neetcode.io/problems/sliding-window-maximum/question?list=neetcode150
 ---
 Clarifying questions: So for this question, I see the constraints already answer a few questions i have, like what if k is negative, and there are constraints for how big nums.length is and if negative numbers are included in nums.
@@ -14,3 +14,6 @@ the issue with this approach is that everytime we shift the window, we have to r
 
 I had a breakthrough! I was able to fully figure out the logic. So we use a monotonic structure (decreasing front to back) and storing indices so i can check the scope as i go along. When a new element arrives, pop the back every element smaller than it, because a smaller and older element can't be the max while a bigger one is in the window. 
 [[Stacks]]
+
+# Attempt 2 Notes:
+I got the logic correctly, with the monotonic queue, but got lost in implementation. Need to review

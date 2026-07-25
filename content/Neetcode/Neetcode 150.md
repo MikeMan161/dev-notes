@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-07-23 13:24
+lastmod: 2026-07-24 14:19
 date: 2026-06-20 22:00
 ---
 I'm practicing the Neetcode 150 every day to get experience solving complicated computing problems
@@ -67,7 +67,7 @@ After each attempt, rate how it went and set the note's `interval` in frontmatte
 | Problem                              | Last Solved | Attempt 1 | Attempt 2 | Attempt 3 | Attempt 4 | Attempt 5 |
 | ------------------------------------ | ----------- | --------- | --------- | --------- | --------- | --------- |
 | [[Valid Parentheses]]                | 6/25        | :)        |           |           |           |           |
-| [[Min Stack]]                        | 7/4         | :/        |           |           |           |           |
+| [[Min Stack]]                        | 7/24        | :/        | :)        |           |           |           |
 | [[Evaluate Reverse Polish Notation]] | 7/12        | :)        |           |           |           |           |
 | [[Daily Temperatures]]               | 7/13        | :(        |           |           |           |           |
 | [[Car Fleet]]                        | 7/13        | :)        |           |           |           |           |
@@ -85,7 +85,7 @@ After each attempt, rate how it went and set the note's `interval` in frontmatte
 | [[Find Minimum in Rotated Sorted Array]] | 7/15        | :/        |           |           |           |           |
 | [[Search in Rotated Sorted Array]]       | 7/15        | :(        |           |           |           |           |
 | [[Time Based Key Value Store]]           | 7/20        | :/        |           |           |           |           |
-| [[Median of Two Sorted Arrays]]          |             |           |           |           |           |           |
+| [[Median of Two Sorted Arrays]]          | 7/24        | :(        |           |           |           |           |
 
 ---
 
