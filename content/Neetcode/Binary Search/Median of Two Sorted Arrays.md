@@ -1,6 +1,6 @@
 ---
 date: 2026-07-18 12:00
-lastmod: 2026-07-24 18:39
+lastmod: 2026-07-25 10:42
 topic: Binary Search
 url: https://neetcode.io/problems/median-of-two-sorted-arrays/question?list=neetcode150
 last-solved: 2026-07-24

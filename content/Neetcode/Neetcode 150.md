@@ -26,7 +26,7 @@ After each attempt, rate how it went and set the note's `interval` in frontmatte
 | Problem                          | Last Solved | Attempt 1 | Attempt 2 | Attempt 3 | Attempt 4 | Attempt 5 |
 | -------------------------------- | ----------- | --------- | --------- | --------- | --------- | --------- |
 | [[Contains Duplicate]]           | 7/14        | :/        | :)        |           |           |           |
-| [[Valid Anagram]]                | 6/23        | :/        | :)        |           |           |           |
+| [[Valid Anagram]]                |             | :/        | :)        |           |           |           |
 | [[Two Sum]]                      | 7/14        | :/        | :)        |           |           |           |
 | [[Group Anagrams]]               | 7/19        | :/        | :/        |           |           |           |
 | [[Top K Frequent Elements]]      |             |           |           |           |           |           |

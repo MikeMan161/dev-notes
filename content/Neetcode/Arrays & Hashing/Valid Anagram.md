@@ -1,8 +1,8 @@
 ---
 date: 2026-06-22 22:00
-lastmod: 2026-06-23 21:54
+lastmod: 2026-07-25 22:00
 topic: Arrays & Hashing
-last-solved: 2026-06-23
+last-solved: 2026-07-25
 interval: 21
 url: https://neetcode.io/problems/is-anagram/question?list=neetcode150
 ---
