@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-07-24 09:59
+lastmod: 2026-07-26 13:37
 date: 2026-07-08 15:26
 ---
 - to do: must go back and implement business-rule validation across all schemas. things like valid ranges and allowed values.
@@ -8,3 +8,5 @@ date: 2026-07-08 15:26
 - Small note on `30.00%` — your backend returns `target_percentage` as a string-ish decimal (probably `Numeric` in SQLAlchemy serializing with trailing zeros). Your TS type says `number`. Worth checking the Network tab whether it's `30.00` or `"30.00"` — if it's quoted, your type is lying and you'll want `string`, or format it in the component with `Number(percent)`.
 - fix: have the backend accept either email or username in a single login_identifier or username field, then queries user.email == identifier or user.username == identifier. A decent backend route change.
 - **Route param** — `/buckets/:bucketId/categories`. The ID lives in the URL, you read it with `useParams()`. Bookmarkable, back button works, and it's what the URL bar is for. Costs you a route.
+- Review cascade relationships for hard/soft deletes (making sure deleting categories doesn't wipe all transactions, etc)
+- Along with the last point, i see that to get transactions, it expects a category_id. however, maybe i should make it so you can make/get transactions that arent tied to a category, and you can assign it to a category. since transactions have soft deletes, i dont want it when you delete a category to automatically wipe all of those transactions. what if you just wanted to move things around or group things into a new category, but when you delete one category you just wipe everything? not good. also, to get one specific transaction, the route takes just the transaction id. so maybe make a way to get transactions in general? things to think about.
