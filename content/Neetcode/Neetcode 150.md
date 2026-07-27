@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-07-25 22:01
+lastmod: 2026-07-27 12:19
 date: 2026-06-20 22:00
 ---
 I'm practicing the Neetcode 150 every day to get experience solving complicated computing problems
@@ -69,7 +69,7 @@ After each attempt, rate how it went and set the note's `interval` in frontmatte
 | [[Valid Parentheses]]                | 6/25        | :)        |           |           |           |           |
 | [[Min Stack]]                        | 7/24        | :/        | :)        |           |           |           |
 | [[Evaluate Reverse Polish Notation]] | 7/12        | :)        |           |           |           |           |
-| [[Daily Temperatures]]               | 7/13        | :(        |           |           |           |           |
+| [[Daily Temperatures]]               | 7/27        | :(        | :(        |           |           |           |
 | [[Car Fleet]]                        | 7/13        | :)        |           |           |           |           |
 | [[Largest Rectangle in Histogram]]   | 7/13        | :(        |           |           |           |           |
 
