@@ -40,3 +40,15 @@ Big distinction between searching for a specific answer, and the left/right boun
 	- for left boundary, we are looking for either the first instance of a number, or if target doesnt exist in the input, the smallest number > target. example = \[1,3,5,7], target 4. the left boundary would be index = 2. there is no 4 in the input, so we search for the smallest number greater than the target, and that's the insert point if you want to keep the array sorted. because we're not just looking for an answer, but the first instance of it, when you shrink the array, you always must include mid, as it could still be the correct answer. so left = mid - 1, right = mid - 1
 	- right boundary is exactly the same, but inverted. you want to find the last occurance of the target in the input, or if it doesn't exist, find the largest number < target. so for the same example, the right boundary would be index = 1, since 3 is the largest number less than the target, and that's where you would insert 4. also
 - Also, for left boundary, the answer also has an implication for the entire input. for example, if that same example was about acceptable miles per hour, and 4 was the target, the left boundary implies that everything above 4 is an acceptable mph to be going at, and everything below is incorrect. the inverse is true for right boundary, the implication is that everything less than 4 is acceptable.
+
+## Tracker
+
+| Problem                                  | Last Solved | Attempt 1 | Attempt 2 | Attempt 3 | Attempt 4 | Attempt 5 |
+| ---------------------------------------- | ----------- | --------- | --------- | --------- | --------- | --------- |
+| [[Binary Search Problem]]                | 7/14        | :)        |           |           |           |           |
+| [[Search a 2D Matrix]]                   | 7/14        | :/        |           |           |           |           |
+| [[Koko Eating Bananas]]                  | 7/15        | :/        |           |           |           |           |
+| [[Find Minimum in Rotated Sorted Array]] | 7/15        | :/        |           |           |           |           |
+| [[Search in Rotated Sorted Array]]       | 7/15        | :(        |           |           |           |           |
+| [[Time Based Key Value Store]]           | 7/20        | :/        |           |           |           |           |
+| [[Median of Two Sorted Arrays]]          | 7/24        | :(        |           |           |           |           |

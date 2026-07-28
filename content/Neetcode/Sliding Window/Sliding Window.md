@@ -40,9 +40,13 @@ With this framework, whenever i face a substring/subarray problem, I just need t
 3. When should you update the result?
 After answering all 3, I can solve any sliding window problem. 
 
-[[Best time to buy and sell stock]]
-[[Longest Substring Without Repeating Characters]]
-[[Longest Repeating Character Replacement]]
-[[Permutation in String]]
-[[Minimum Window Substring]]
-[[Sliding Window Maximum]]
+## Tracker
+
+| Problem                                            | Last Solved | Attempt 1 | Attempt 2 | Attempt 3 | Attempt 4 | Attempt 5 |
+| -------------------------------------------------- | ----------- | --------- | --------- | --------- | --------- | --------- |
+| [[Best time to buy and sell stock]]                | 7/18        | :/        | :/        |           |           |           |
+| [[Longest Substring Without Repeating Characters]] | 7/22        | :/        | :)        |           |           |           |
+| [[Longest Repeating Character Replacement]]        | 7/23        | :/        | :)        |           |           |           |
+| [[Permutation in String]]                          | 6/22        | :(        |           |           |           |           |
+| [[Minimum Window Substring]]                       | 7/21        | :(        | :(        |           |           |           |
+| [[Sliding Window Maximum]]                         | 6/24        | :/        |           |           |           |           |
