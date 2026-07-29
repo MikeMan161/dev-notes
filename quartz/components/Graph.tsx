@@ -5,6 +5,17 @@ import style from "./styles/graph.scss"
 import { i18n } from "../i18n"
 import { classNames } from "../util/lang"
 
+/**
+ * Colors a set of nodes by where they live in the vault, mirroring Obsidian's
+ * graph color groups. `paths` are slug prefixes (a folder) or exact slugs (a
+ * single note); matching is case-insensitive and ignores how Quartz sluggifies
+ * separators, so "Arrays & Hashing" and "arrays-and-hashing" both work.
+ */
+export interface GraphColorGroup {
+  color: string
+  paths: string[]
+}
+
 export interface D3Config {
   drag: boolean
   zoom: boolean
@@ -19,6 +30,7 @@ export interface D3Config {
   showTags: boolean
   focusOnHover?: boolean
   enableRadial?: boolean
+  colorGroups?: GraphColorGroup[]
 }
 
 interface GraphOptions {
@@ -41,6 +53,7 @@ const defaultOptions: GraphOptions = {
     removeTags: [],
     focusOnHover: false,
     enableRadial: false,
+    colorGroups: [],
   },
   globalGraph: {
     drag: true,
@@ -56,6 +69,7 @@ const defaultOptions: GraphOptions = {
     removeTags: [],
     focusOnHover: true,
     enableRadial: true,
+    colorGroups: [],
   },
 }
 

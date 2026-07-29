@@ -1,9 +1,9 @@
 ---
 date: 2026-06-25 14:23
-lastmod: 2026-06-25 14:28
+lastmod: 2026-07-28 19:27
 topic: Stacks
-last-solved: 2026-06-25
-interval: 21
+last-solved: 2026-07-28
+interval: 60
 url: https://neetcode.io/problems/validate-parentheses/question?list=neetcode150
 ---
 Like sliding window maximum, this is my first problem dealing with Stacks, so this is a real learning opportunity. 

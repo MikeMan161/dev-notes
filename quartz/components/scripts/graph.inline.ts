@@ -87,6 +87,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     showTags,
     focusOnHover,
     enableRadial,
+    colorGroups,
   } = JSON.parse(graph.dataset["cfg"]!) as D3Config
 
   const data: Map<SimpleSlug, ContentDetails> = new Map(
@@ -193,12 +194,47 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     {} as Record<(typeof cssVars)[number], string>,
   )
 
+  // collapse the separators Quartz's sluggifier produces ("&" -> "-and-", spaces
+  // -> "-") so a group can be written the way the folder is actually named
+  const normalizeSlug = (s: string) =>
+    s
+      .toLowerCase()
+      // sluggify() spells these out rather than dropping them
+      .replace(/&/g, "-and-")
+      .replace(/%/g, "-percent-")
+      .replace(/[^a-z0-9/]+/g, "-")
+      .replace(/^-|-$/g, "")
+
+  const normalizedGroups = (colorGroups ?? []).map((g) => ({
+    color: g.color,
+    paths: g.paths.map(normalizeSlug),
+  }))
+
+  // first matching group wins, so list narrower paths before broader ones
+  const groupColor = (id: SimpleSlug) => {
+    if (normalizedGroups.length === 0) return undefined
+    const node = normalizeSlug(id)
+    for (const group of normalizedGroups) {
+      if (group.paths.some((p) => node === p || node.startsWith(p + "/"))) {
+        return group.color
+      }
+    }
+    return undefined
+  }
+
   // calculate color
   const color = (d: NodeData) => {
     const isCurrent = d.id === slug
     if (isCurrent) {
       return computedStyleMap["--secondary"]
-    } else if (visited.has(d.id) || d.id.startsWith("tags/")) {
+    }
+
+    const group = groupColor(d.id)
+    if (group) {
+      return group
+    }
+
+    if (visited.has(d.id) || d.id.startsWith("tags/")) {
       return computedStyleMap["--tertiary"]
     } else {
       return computedStyleMap["--gray"]

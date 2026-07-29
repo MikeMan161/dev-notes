@@ -1,5 +1,70 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
+import { GraphColorGroup } from "./quartz/components/Graph"
+
+// Graph node colors, mirroring the color groups in content/.obsidian/graph.json.
+// Paths are slug prefixes; first match wins, so hubs are listed before the
+// folders that contain them.
+const graphColorGroups: GraphColorGroup[] = [
+  {
+    // hubs & indexes — the notes you navigate *from*
+    color: "#e0a800",
+    paths: [
+      "/",
+      "My AI Workflow",
+      "Neetcode/Neetcode 150",
+      "Neetcode/Review Queue",
+      "Project Notes/Roadmap",
+      "Project Notes/To review list",
+    ],
+  },
+  {
+    // arrays & scanning
+    color: "#3b82f6",
+    paths: [
+      "Neetcode/Arrays & Hashing",
+      "Neetcode/Two Pointers",
+      "Neetcode/Sliding Window",
+      "Neetcode/Intervals",
+      "Neetcode/Binary Search",
+    ],
+  },
+  {
+    // linear structures
+    color: "#06b6d4",
+    paths: ["Neetcode/Stack", "Neetcode/Linked List", "Neetcode/Heap or Priority Queue"],
+  },
+  {
+    // trees & graphs
+    color: "#10b981",
+    paths: ["Neetcode/Trees", "Neetcode/Tries", "Neetcode/Graphs", "Neetcode/Advanced Graphs"],
+  },
+  {
+    // recursion, DP & greedy
+    color: "#8b5cf6",
+    paths: [
+      "Neetcode/Backtracking",
+      "Neetcode/1-D Dynamic Programming",
+      "Neetcode/2-D Dynamic Programming",
+      "Neetcode/Greedy",
+    ],
+  },
+  {
+    // math & bits
+    color: "#ec4899",
+    paths: ["Neetcode/Math and Geometry", "Neetcode/Bit Manipulation"],
+  },
+  {
+    // the finance project
+    color: "#f97316",
+    paths: ["Project Notes"],
+  },
+  {
+    // reference material, deliberately muted
+    color: "#64748b",
+    paths: ["Coding Tips"],
+  },
+]
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
@@ -41,7 +106,10 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Explorer(),
   ],
   right: [
-    Component.Graph(),
+    Component.Graph({
+      localGraph: { colorGroups: graphColorGroups },
+      globalGraph: { colorGroups: graphColorGroups },
+    }),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
   ],

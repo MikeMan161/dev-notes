@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-06-23 15:14
+lastmod: 2026-07-29 14:03
 date: 2026-06-22 22:00
 ---
 now that I've setup the database, I'm going to start working on the backend. I'm using FastAPI, I already decided to use python for the backend, so FastAPI works perfectly fine for what I'm making
@@ -17,6 +17,7 @@ now that I've setup the database, I'm going to start working on the backend. I'm
 	- POST: create something new
 	- PUT/PATCH: update something existing
 	- DELETE: delete something
+[[HTTP status code reference sheet]]
 
 ## Request/Response Cycle:
 - every interaction between the frontend and backend follows this cycle:

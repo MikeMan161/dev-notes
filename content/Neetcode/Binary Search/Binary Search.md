@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-07-14 11:35
+lastmod: 2026-07-29 09:53
 date: 2026-07-13 22:00
 ---
 Binary search sounds simple, but the real devil is in the details. There are 3 most common binary search cases:
@@ -49,6 +49,6 @@ Big distinction between searching for a specific answer, and the left/right boun
 | [[Search a 2D Matrix]]                   | 7/14        | :/        |           |           |           |           |
 | [[Koko Eating Bananas]]                  | 7/15        | :/        |           |           |           |           |
 | [[Find Minimum in Rotated Sorted Array]] | 7/15        | :/        |           |           |           |           |
-| [[Search in Rotated Sorted Array]]       | 7/15        | :(        |           |           |           |           |
+| [[Search in Rotated Sorted Array]]       | 7/29        | :(        | :/        |           |           |           |
 | [[Time Based Key Value Store]]           | 7/20        | :/        |           |           |           |           |
 | [[Median of Two Sorted Arrays]]          | 7/24        | :(        |           |           |           |           |

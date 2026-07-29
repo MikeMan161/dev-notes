@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-07-27 20:51
+lastmod: 2026-07-29 14:04
 date: 2026-07-26 22:00
 ---
 ## Tracker
@@ -19,6 +19,8 @@ date: 2026-07-26 22:00
 | [[Reverse Nodes In K Group]]         |             |           |           |           |           |           |
 
 ## Here's my general notes for the linked list algorithm, plus general notes on each problem.
+
+[[Coding Tips/Linked List|Linked List]]
 
 This is how to define a singly linked list:
 
