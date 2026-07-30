@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-07-29 14:02
+lastmod: 2026-07-29 14:33
 date: 2026-07-08 18:58
 ---
 For my frontend, I'll be using React + TypeScript.
@@ -17,3 +17,6 @@ Here's the stack for the frontend:
 - Tailwind CSS - helps style the app
 - shaden/ui - prebuilt components built on top of tailwind that i can copy to the repo and use
 - Recharts - Graphs and charts, for visualizations
+
+UI References:
+[[UI Notes]]

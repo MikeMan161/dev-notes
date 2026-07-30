@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-07-29 14:03
+lastmod: 2026-07-29 15:02
 date: 2026-07-17 15:59
 ---
 # This project will be a financial dashboard. it will be a full stack project
@@ -15,9 +15,9 @@ Ai Layer: Claude
 Deployment: AWS (Elastic Beanstalk + RDS)
 optional: FRED API for economic benchmarks
 
-To Review list for final passthrough:
+## To do later before deployment:
 [[To review list]]
-
+[[New User Onboarding (not critical at the moment, save for later)]]
 ## Key features: 
 CSV upload or manual data entry
 auto categorization using LLM
