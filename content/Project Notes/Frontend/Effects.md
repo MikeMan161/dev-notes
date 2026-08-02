@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-07-17 19:52
+lastmod: 2026-08-01 10:58
 date: 2026-07-17 18:17
 ---
 Effects let you specify side effects that are caused by rendering itself, rathre than by a particular event. For example, sending a message in the chat is an event because it is directly caused by the user clicking a specific button. however, setting up a server connection is an Effect because it should happen no matter which interaction caused the component to appear.
