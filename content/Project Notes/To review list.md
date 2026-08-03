@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-08-01 16:48
+lastmod: 2026-08-02 20:30
 date: 2026-07-08 15:26
 ---
 # Review Queue — sorted by priority
@@ -74,7 +74,8 @@ Pick up one at a time, guilt-free.*
   bucket_type, audit all schemas against the ISO 4217 currency template).
 - [ ] Login accepts email OR username in a single `login_identifier` field
   → query `user.email == identifier OR user.username == identifier`.
-- [ ] separate service/CRUD layer, like services/bucket.py or crud.py that holds database logic, so routers stay thin and just call get_bucket_spending(db, user). Move all database logic out of the router files and migrate them to a services folder to trim down the size
+- [ ] separate service/CRUD layer, like services/bucket.py or crud.py that holds database logic, so routers stay thin and just call get_bucket_spending(db, user). Move all database logic out of the router files and migrate them to a services folder to trim down the size (partially done)
+- [ ] add a dual-mode income, hooked up to the AI layer that inputs paychecks from user and dynamically recomputes envelope totals based off real income, not an estimated income
 
 **Frontend features / UX**
 - [ ] Route param for categories — `/buckets/:bucketId/categories`, read
