@@ -1,26 +1,26 @@
 ---
-lastmod: 2026-08-02 20:30
+lastmod: 2026-08-03 18:17
 date: 2026-07-08 15:26
 ---
 # Review Queue — sorted by priority
 
 ## MUST-FIX BEFORE DEPLOY
 
-- [ ] **PATCH /categories is broken** — `categories.py:67` references
+- [x] **PATCH /categories is broken** — `categories.py:67` references
   `payload.Buckets_id`; the schema field is `bucket_id`. Every category
   update raises AttributeError → 500. Fix to `payload.bucket_id`.
-- [ ] **FK-ownership check in transactions.py** — verify `category_id`
+- [x] **FK-ownership check in transactions.py** — verify `category_id`
   exists AND belongs to `current_user.id` before `db.commit()`, raise 404
   if not. Confirmed live 500 when a bucket_id was passed as a category_id.
   No client-supplied FK should reach commit unverified. (Security.)
-- [ ] **Decimal serialization** — Pydantic v2 serializes Decimal to a JSON
+- [x] **Decimal serialization** — Pydantic v2 serializes Decimal to a JSON
   string, so `amount`, `target_amount`, `current_amount`, `current_balance`,
   `apr`, `minimum_payment`, `target_percentage`, `alert_threshold` all
   arrive as `"42.50"`, not `42.50`. Frontend types declare `number` — the
   types are lying, and arithmetic silently breaks (NaN / string concat).
   Fix once on the backend: `@field_serializer` returning float on response
   schemas. One change fixes all consumers.
-- [ ] **MAJOR: backend computes bucket spent + limit** — backend never
+- [x] **MAJOR: backend computes bucket spent + limit** — backend never
   computes spending totals (designed before the envelope-display idea).
   `spent` = SUM of all transactions across all categories in a bucket, via
   ONE grouped SQL aggregation (join transactions→categories→buckets,
@@ -28,10 +28,11 @@ date: 2026-07-08 15:26
   total_monthly_income` (income from the income table). Enrich
   `BucketResponse` with both computed fields so the frontend map lines up
   unchanged. Design on paper first. → see [[SQL Aggregation]]
-- [ ] **Token persistence (Phase 1: localStorage)** — token currently lives
+- [x] **Token persistence (Phase 1: localStorage)** — token currently lives
   only in React state, so refresh logs the user out. Persist in
   localStorage + rehydrate on mount to ship. (httpOnly migration is
-  post-deploy — see below.)
+  post-deploy — see below.) [[Token Persistence]]
+
 
 ## SHIP-BLOCKING-ADJACENT (STUB-ABLE)
 *Rides along with the backend rework. Needed for correct data, but can be
@@ -41,10 +42,17 @@ stubbed briefly while spent lands first. One focused session.*
   filtered to the current month. Add a `WHERE` on transaction date to the
   aggregation query. (Not a calendar — just a monthly reset.) Decide this
   WITH the spent query; they're the same task.
-- [ ] **Limit computation** — `target_percentage × total_monthly_income`.
+- [x] **Limit computation** — `target_percentage × total_monthly_income`.
   Income comes from the income table (may be a sum of income rows — confirm
   shape). Can stub limit a little longer while nailing spent, but it's part
   of the same rework.
+ - [ ]  **MAJOR: `AuthError` handling extracted / per-page auth-failure coverage** — the `try/catch (AuthError) → clearToken() + navigate("/")` pattern currently lives ONLY in `Dashboard.tsx`. Works, but it's one instance of a pattern every authenticated page needs — a dead/expired token must clear auth and redirect from ANY page, not just Dashboard. As soon as the other pages (Income, Debts, Transactions, Savings Goals) make authenticated calls, each needs the identical catch block. Copy-pasting that catch into every page is the duplication signal. When it shows up (~2nd–3rd page), extract into an **AuthContext** that owns `token` / `clearToken` / the auth-failure handler and exposes a single "handle auth failure" the pages call — keeps the API layer pure (no React/routing imports in `apiFetch`). Alternative: trigger logout from inside `apiFetch` via a registered callback, but that reintroduces the "API layer can't touch React state" problem — more machinery, only if context proves insufficient. Do NOT build now — one page is not yet duplication. Build when the copy-paste is real. → see Token Persistence
+ - [ ] categories.tsx has a broken props/state and unused imports in components/pages.
+
+Smaller items surfaced alongside:
+
+- Dashboard catch only `console.error`s non-auth failures — needs a real error-state UI ("couldn't load, retry"), not just a console log.
+- Consider `navigate("/", { replace: true })` for consistency with the line-36 `<Navigate replace />` guard, so the explicit redirect also avoids a dead-session history entry.
 
 ## POST-DEPLOY 
 *None of this blocks a working deployed app. Can wait weeks or months.
@@ -74,8 +82,11 @@ Pick up one at a time, guilt-free.*
   bucket_type, audit all schemas against the ISO 4217 currency template).
 - [ ] Login accepts email OR username in a single `login_identifier` field
   → query `user.email == identifier OR user.username == identifier`.
-- [ ] separate service/CRUD layer, like services/bucket.py or crud.py that holds database logic, so routers stay thin and just call get_bucket_spending(db, user). Move all database logic out of the router files and migrate them to a services folder to trim down the size (partially done)
+- [x] separate service/CRUD layer, like services/bucket.py or crud.py that holds database logic, so routers stay thin and just call get_bucket_spending(db, user). Move all database logic out of the router files and migrate them to a services folder to trim down the size (partially done)
 - [ ] add a dual-mode income, hooked up to the AI layer that inputs paychecks from user and dynamically recomputes envelope totals based off real income, not an estimated income
+- [ ] Savings goals shouldn't reset every month
+- [ ] the limit shouldnt change either, prompt the user at the beginning of every month, ask if they would like to update their monthly income and/or their bucket percentages.
+- [ ] all of my patch routes are full-replace contracts, basically you have to send back everything instead of just updating a single variable. revisit this later.
 
 **Frontend features / UX**
 - [ ] Route param for categories — `/buckets/:bucketId/categories`, read
