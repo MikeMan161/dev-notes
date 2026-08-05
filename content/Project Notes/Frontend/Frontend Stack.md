@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-07-29 14:33
+lastmod: 2026-08-04 19:56
 date: 2026-07-08 18:58
 ---
 For my frontend, I'll be using React + TypeScript.
@@ -15,6 +15,9 @@ Here's the stack for the frontend:
 - TanStack Query - what manages communication with the backend. all of the fetching, caching, and syncing of server data. Essentially the layer that lives between the React components and the FastAPI API. the "how does the frontend talk to the backend" question solved!
 	- [[TanStack Query Notes]]
 - Tailwind CSS - helps style the app
+	- [[Tailwind Notes]]
+	- [[UI Notes]]
+	- [[UI Handwritten notes]]
 - shaden/ui - prebuilt components built on top of tailwind that i can copy to the repo and use
 - Recharts - Graphs and charts, for visualizations
 

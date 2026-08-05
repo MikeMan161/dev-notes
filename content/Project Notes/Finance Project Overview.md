@@ -1,23 +1,28 @@
 ---
-lastmod: 2026-07-29 15:02
+lastmod: 2026-08-04 15:03
 date: 2026-07-17 15:59
 ---
 # This project will be a financial dashboard. it will be a full stack project
 
 ## The stack:
-Frontend: FastAPI and Typescript
-[[Frontend Stack]]
-Backend: FastAPI and Python
-[[Backend notes]]
-Database: PostgreSQL
-[[Database Notes]]
-Ai Layer: Claude
-Deployment: AWS (Elastic Beanstalk + RDS)
+- Frontend: FastAPI and Typescript
+	- [[Frontend Stack]]
+- Backend: FastAPI and Python
+	- [[Backend notes]]
+- Database: PostgreSQL
+	- [[Database Notes]]
+- Ai Layer: Claude
+	- [[AI Layer Notes]]
+- Deployment: AWS (Elastic Beanstalk + RDS)
+	- [[Deployment Notes]]
+
 optional: FRED API for economic benchmarks
 
 ## To do later before deployment:
 [[To review list]]
 [[New User Onboarding (not critical at the moment, save for later)]]
+[[Homelab Plan]]
+[[Interview-prep questions about the Finance App]]
 ## Key features: 
 CSV upload or manual data entry
 auto categorization using LLM

@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-08-03 18:17
+lastmod: 2026-08-04 20:59
 date: 2026-07-08 15:26
 ---
 # Review Queue — sorted by priority
@@ -32,6 +32,9 @@ date: 2026-07-08 15:26
   only in React state, so refresh logs the user out. Persist in
   localStorage + rehydrate on mount to ship. (httpOnly migration is
   post-deploy — see below.) [[Token Persistence]]
+- [ ] **Implement every other resource**: This goes hand in hand with the next point
+- [ ] **Implement shadcn sidebar** Adding a sidebar would make this 6+ page app much easier for the user to navigate through. 
+- [ ] Wire savings goals and debts to buckets. I have to review the book again, but i'm pretty sure that these two should reflect in a bucket, say the user makes a bucket that tracks necessities they need to pay or save up to, the limit of that certain bucket should use the numbers from savings goals and debts.
 
 
 ## SHIP-BLOCKING-ADJACENT (STUB-ABLE)
@@ -46,7 +49,7 @@ stubbed briefly while spent lands first. One focused session.*
   Income comes from the income table (may be a sum of income rows — confirm
   shape). Can stub limit a little longer while nailing spent, but it's part
   of the same rework.
- - [ ]  **MAJOR: `AuthError` handling extracted / per-page auth-failure coverage** — the `try/catch (AuthError) → clearToken() + navigate("/")` pattern currently lives ONLY in `Dashboard.tsx`. Works, but it's one instance of a pattern every authenticated page needs — a dead/expired token must clear auth and redirect from ANY page, not just Dashboard. As soon as the other pages (Income, Debts, Transactions, Savings Goals) make authenticated calls, each needs the identical catch block. Copy-pasting that catch into every page is the duplication signal. When it shows up (~2nd–3rd page), extract into an **AuthContext** that owns `token` / `clearToken` / the auth-failure handler and exposes a single "handle auth failure" the pages call — keeps the API layer pure (no React/routing imports in `apiFetch`). Alternative: trigger logout from inside `apiFetch` via a registered callback, but that reintroduces the "API layer can't touch React state" problem — more machinery, only if context proves insufficient. Do NOT build now — one page is not yet duplication. Build when the copy-paste is real. → see Token Persistence
+ - [x]  **MAJOR: `AuthError` handling extracted / per-page auth-failure coverage** — the `try/catch (AuthError) → clearToken() + navigate("/")` pattern currently lives ONLY in `Dashboard.tsx`. Works, but it's one instance of a pattern every authenticated page needs — a dead/expired token must clear auth and redirect from ANY page, not just Dashboard. As soon as the other pages (Income, Debts, Transactions, Savings Goals) make authenticated calls, each needs the identical catch block. Copy-pasting that catch into every page is the duplication signal. When it shows up (~2nd–3rd page), extract into an **AuthContext** that owns `token` / `clearToken` / the auth-failure handler and exposes a single "handle auth failure" the pages call — keeps the API layer pure (no React/routing imports in `apiFetch`). Alternative: trigger logout from inside `apiFetch` via a registered callback, but that reintroduces the "API layer can't touch React state" problem — more machinery, only if context proves insufficient. Do NOT build now — one page is not yet duplication. Build when the copy-paste is real. → see Token Persistence
  - [ ] categories.tsx has a broken props/state and unused imports in components/pages.
 
 Smaller items surfaced alongside:
@@ -68,7 +71,7 @@ Pick up one at a time, guilt-free.*
 - [ ] Review cascade relationships for hard/soft deletes (deleting a
   category shouldn't wipe all its transactions). Confirm FK behavior —
   want `ON DELETE SET NULL`, never CASCADE, on `transactions.category_id`.
-- [ ] Allow transactions NOT tied to a category (nullable `category_id`),
+- [x] Allow transactions NOT tied to a category (nullable `category_id`),
   so you can regroup/reassign without deletion wiping everything. Add a
   "get transactions in general" route (currently GET expects a category_id
   or a single transaction id).
@@ -97,7 +100,7 @@ Pick up one at a time, guilt-free.*
   recorded. Transfer button eventually lives in CardAction.
 
 **Type/serialization cleanup (do with Decimal fix or later)**
-- [ ] `target_percentage` renders `30.00` — verify Network tab shows
+- [x] `target_percentage` renders `30.00` — verify Network tab shows
   `30.00` vs `"30.00"`; fix type or `Number()` in component. (Subsumed by
   the Decimal fix above.)
 - [ ] Date fields — `DebtCreate.due_date` and `IncomeCreate.income_date`

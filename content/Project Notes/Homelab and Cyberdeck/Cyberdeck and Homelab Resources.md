@@ -18,4 +18,4 @@ r/raspberry_pi and r/retrofuturism
 Hackaday.com
 Jeff Geerling
 
-[[Homelab and Cyberdeck Plan]]
+[[Homelab Plan]]
