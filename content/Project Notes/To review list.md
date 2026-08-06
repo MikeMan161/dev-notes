@@ -1,8 +1,8 @@
 ---
-lastmod: 2026-08-04 20:59
+lastmod: 2026-08-05 16:17
 date: 2026-07-08 15:26
 ---
-# Review Queue — sorted by priority
+# Review Queue: sorted by priority
 
 ## MUST-FIX BEFORE DEPLOY
 
@@ -34,7 +34,10 @@ date: 2026-07-08 15:26
   post-deploy — see below.) [[Token Persistence]]
 - [ ] **Implement every other resource**: This goes hand in hand with the next point
 - [ ] **Implement shadcn sidebar** Adding a sidebar would make this 6+ page app much easier for the user to navigate through. 
-- [ ] Wire savings goals and debts to buckets. I have to review the book again, but i'm pretty sure that these two should reflect in a bucket, say the user makes a bucket that tracks necessities they need to pay or save up to, the limit of that certain bucket should use the numbers from savings goals and debts.
+- [ ] Create a sign up page, seed the four buckets on signup
+- [ ] Resolve and implement the debt into fixed costs feed
+- [ ] Refactor api fetches into tanstack query
+After rereading *I will teach you to be rich*, I came to a big realization about the whole model of the app, something that i need to restructure the backend to reflect in the frontend. See more here: [[Design Changes]]
 
 
 ## SHIP-BLOCKING-ADJACENT (STUB-ABLE)
