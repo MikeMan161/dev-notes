@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-08-05 16:17
+lastmod: 2026-08-06 19:19
 date: 2026-07-08 15:26
 ---
 # Review Queue: sorted by priority
@@ -34,9 +34,9 @@ date: 2026-07-08 15:26
   post-deploy — see below.) [[Token Persistence]]
 - [ ] **Implement every other resource**: This goes hand in hand with the next point
 - [ ] **Implement shadcn sidebar** Adding a sidebar would make this 6+ page app much easier for the user to navigate through. 
-- [ ] Create a sign up page, seed the four buckets on signup
+- [x] Create a sign up page, seed the four buckets on signup
 - [ ] Resolve and implement the debt into fixed costs feed
-- [ ] Refactor api fetches into tanstack query
+- [ ] **Replace the bucket-editing loop with a single transactional endpoint.** The editing page currently saves by PATCHing all four buckets in a client-side loop, so a mid-loop failure leaves some buckets saved and others not,a user could end up with a half-applied plan they never chose (e.g. a random 87% total from a partial save, not a deliberate one). Fix: one batch endpoint (e.g. `PATCH /buckets`) that accepts all four percentage/threshold updates and commits them in a single transaction, so it's all-or-nothing. Same atomicity principle already applied to registration seeding (`flush → seed → one commit`); the editing path is currently on the wrong side of it. Not a data-corruption risk today (Pydantic still validates each request), but a real coherence gap once bucket editing is used by actual users.
 After rereading *I will teach you to be rich*, I came to a big realization about the whole model of the app, something that i need to restructure the backend to reflect in the frontend. See more here: [[Design Changes]]
 
 
@@ -44,7 +44,7 @@ After rereading *I will teach you to be rich*, I came to a big realization about
 *Rides along with the backend rework. Needed for correct data, but can be
 stubbed briefly while spent lands first. One focused session.*
 
-- [ ] **Monthly window** — envelopes reset each month, so spent must be
+- [x] **Monthly window** — envelopes reset each month, so spent must be
   filtered to the current month. Add a `WHERE` on transaction date to the
   aggregation query. (Not a calendar — just a monthly reset.) Decide this
   WITH the spent query; they're the same task.
@@ -54,6 +54,7 @@ stubbed briefly while spent lands first. One focused session.*
   of the same rework.
  - [x]  **MAJOR: `AuthError` handling extracted / per-page auth-failure coverage** — the `try/catch (AuthError) → clearToken() + navigate("/")` pattern currently lives ONLY in `Dashboard.tsx`. Works, but it's one instance of a pattern every authenticated page needs — a dead/expired token must clear auth and redirect from ANY page, not just Dashboard. As soon as the other pages (Income, Debts, Transactions, Savings Goals) make authenticated calls, each needs the identical catch block. Copy-pasting that catch into every page is the duplication signal. When it shows up (~2nd–3rd page), extract into an **AuthContext** that owns `token` / `clearToken` / the auth-failure handler and exposes a single "handle auth failure" the pages call — keeps the API layer pure (no React/routing imports in `apiFetch`). Alternative: trigger logout from inside `apiFetch` via a registered callback, but that reintroduces the "API layer can't touch React state" problem — more machinery, only if context proves insufficient. Do NOT build now — one page is not yet duplication. Build when the copy-paste is real. → see Token Persistence
  - [ ] categories.tsx has a broken props/state and unused imports in components/pages.
+ - [ ] input `label`/`name`/`autoComplete`, the `UserResponse` type gaps, and the catch-all route.
 
 Smaller items surfaced alongside:
 
@@ -71,6 +72,7 @@ Pick up one at a time, guilt-free.*
   (Full rationale + 3-option comparison already written below.)
 
 **Backend behavior / data-model questions**
+- [ ] Refactor api fetches into tanstack query
 - [ ] Review cascade relationships for hard/soft deletes (deleting a
   category shouldn't wipe all its transactions). Confirm FK behavior —
   want `ON DELETE SET NULL`, never CASCADE, on `transactions.category_id`.
@@ -83,7 +85,7 @@ Pick up one at a time, guilt-free.*
   (Note: buckets/categories are hard deletes returning `{"message": ...}`;
   the other four are soft deletes returning the full object. Two delete
   contracts — don't let the UI treat them uniformly.)
-- [ ] Business-rule validation across all schemas — valid ranges and
+- [x] Business-rule validation across all schemas — valid ranges and
   allowed values (Field(ge=0, le=100) for percentages, Enum for
   bucket_type, audit all schemas against the ISO 4217 currency template).
 - [ ] Login accepts email OR username in a single `login_identifier` field
@@ -93,6 +95,8 @@ Pick up one at a time, guilt-free.*
 - [ ] Savings goals shouldn't reset every month
 - [ ] the limit shouldnt change either, prompt the user at the beginning of every month, ask if they would like to update their monthly income and/or their bucket percentages.
 - [ ] all of my patch routes are full-replace contracts, basically you have to send back everything instead of just updating a single variable. revisit this later.
+- [ ] dead imports on buckets.py
+- [ ] **Link debt-payment transactions to debt balances (auto-decrement).** Currently (phase 1) debts is a purely informational payoff tracker: the user logs debt _payments_ as normal transactions in a Fixed Costs category (which feeds the bucket's spent via the existing aggregation), and _separately_ maintains each debt's `current_balance` on the debts page,so there's manual double-entry, and the two can drift. Phase-2 upgrade: let a transaction be flagged as a payment toward a specific debt, so logging it also decrements that debt's `current_balance` automatically. Removes the double-entry and makes payoff progress live and accurate from real payments. The payment→bucket side needs no change (transactions already roll into Fixed Costs); this is purely about connecting the payment to the debt's balance.
 
 **Frontend features / UX**
 - [ ] Route param for categories — `/buckets/:bucketId/categories`, read
@@ -101,6 +105,8 @@ Pick up one at a time, guilt-free.*
   philosophy and the envelope system. A blank dashboard is confusing.
 - [ ] Bucket-to-bucket transfer (envelope step 3) — atomic debit/credit,
   recorded. Transfer button eventually lives in CardAction.
+- [ ] Allow users to login with username or email.
+  
 
 **Type/serialization cleanup (do with Decimal fix or later)**
 - [x] `target_percentage` renders `30.00` — verify Network tab shows
