@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-07-21 15:24
+lastmod: 2026-08-07 17:02
 date: 2026-07-07 22:00
 ---
 # Git: 
@@ -21,6 +21,7 @@ git diff (path to file) shows differences between committed version and current 
 git checkout -- (path to file) would restore that file.
 
 # Uvicorn: 
+**Make sure to start venv before, and be in the backend folder**
 uvicorn folder.file:(fastAPI instance variable in file) --reload (run uvicorn)
 
 # Virtual Environment:

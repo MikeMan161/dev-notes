@@ -5,7 +5,7 @@ date: 2026-07-17 15:59
 # This project will be a financial dashboard. it will be a full stack project
 
 ## The stack:
-- Frontend: FastAPI and Typescript
+- Frontend: React and Typescript
 	- [[Frontend Stack]]
 - Backend: FastAPI and Python
 	- [[Backend notes]]
@@ -78,7 +78,6 @@ identify ghost subscriptions
 [[CLI Reference]]
 [[Bash Commands]]
 [[Cyberdeck and Homelab Resources]]
-[[Roadmap]]
 [[PostgreSQL notes]]
 
 **Concretely, for every technology in this stack:**

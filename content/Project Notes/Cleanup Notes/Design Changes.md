@@ -24,6 +24,3 @@ After rereading the relevant chapters, I came to a few massive realizations:
 3. This is directly relevant to point 1, I need to Hardcode the four buckets as defaults. When a user first signs up, the app will default-provision the four buckets to that user. These four buckets are the system itself, it's what separates this as a working, philosophy-shaped app instead of an empty void. 
 	- The buckets won't be fully locked, a user can edit the percentages of each bucket, but the buckets themselves cannot be changed/deleted, and they can't make any new ones. If a user doesn't see a use for the investments bucket, they can set its value to 0%.
 4. Buckets must stay fixed, but the categories within them are fully user-customizable
-
-test@example.com
-string

@@ -14,7 +14,6 @@ const graphColorGroups: GraphColorGroup[] = [
       "My AI Workflow",
       "Neetcode/Neetcode 150",
       "Neetcode/Review Queue",
-      "Project Notes/Roadmap",
       "Project Notes/To review list",
     ],
   },
