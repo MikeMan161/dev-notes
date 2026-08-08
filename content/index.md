@@ -3,11 +3,11 @@ title: Michael Rivera
 description: CS student building a full-stack, AI-integrated personal finance app. These are the working notes behind it — architecture decisions, bugs I caught, and what I changed my mind about.
 ---
 
-I'm a CS student at UNF building full-stack products with AI wired into them, not bolted on the side.
+I'm a CS student at the University of North Florida, graduating May 2027. I build full-stack products with AI wired into them, not bolted on the side.
 
 This site is my working notebook. It's where I reason through architecture before I write it, trace bugs back to the pattern that caused them, and write down what I got wrong. None of it is cleaned up after the fact — when a design turned out to be wrong, the old reasoning is still on the page next to what replaced it.
 
-[LinkedIn](https://www.linkedin.com/in/riveramike/) · [GitHub](https://github.com/MikeMan161)
+[LinkedIn](https://www.linkedin.com/in/riveramike/) · [GitHub](https://github.com/MikeMan161) · [michael.a.rivera.dev@gmail.com](mailto:michael.a.rivera.dev@gmail.com)
 
 ## Start here
 

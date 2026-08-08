@@ -88,6 +88,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     focusOnHover,
     enableRadial,
     colorGroups,
+    sizeGroups,
   } = JSON.parse(graph.dataset["cfg"]!) as D3Config
 
   const data: Map<SimpleSlug, ContentDetails> = new Map(
@@ -205,22 +206,29 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
       .replace(/[^a-z0-9/]+/g, "-")
       .replace(/^-|-$/g, "")
 
-  const normalizedGroups = (colorGroups ?? []).map((g) => ({
-    color: g.color,
-    paths: g.paths.map(normalizeSlug),
-  }))
-
   // first matching group wins, so list narrower paths before broader ones
-  const groupColor = (id: SimpleSlug) => {
-    if (normalizedGroups.length === 0) return undefined
-    const node = normalizeSlug(id)
-    for (const group of normalizedGroups) {
-      if (group.paths.some((p) => node === p || node.startsWith(p + "/"))) {
-        return group.color
+  const matchGroup = <T, G extends { paths: string[] }>(
+    groups: G[] | undefined,
+    pick: (group: G) => T,
+  ) => {
+    const normalized = (groups ?? []).map((g) => ({
+      value: pick(g),
+      paths: g.paths.map(normalizeSlug),
+    }))
+    return (id: SimpleSlug) => {
+      if (normalized.length === 0) return undefined
+      const node = normalizeSlug(id)
+      for (const group of normalized) {
+        if (group.paths.some((p) => node === p || node.startsWith(p + "/"))) {
+          return group.value
+        }
       }
+      return undefined
     }
-    return undefined
   }
+
+  const groupColor = matchGroup(colorGroups, (g) => g.color)
+  const groupScale = matchGroup(sizeGroups, (g) => g.scale)
 
   // calculate color
   const color = (d: NodeData) => {
@@ -245,7 +253,13 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
     const numLinks = graphData.links.filter(
       (l) => l.source.id === d.id || l.target.id === d.id,
     ).length
-    return 2 + Math.sqrt(numLinks)
+    return (2 + Math.sqrt(numLinks)) * (groupScale(d.id) ?? 1)
+  }
+
+  // labels follow their node's emphasis, but dampened — a node at half size
+  // still needs a readable label
+  function nodeLabelSize(d: NodeData) {
+    return fontSize * 15 * (1 + ((groupScale(d.id) ?? 1) - 1) * 0.5)
   }
 
   let hoveredNodeId: string | null = null
@@ -417,7 +431,7 @@ async function renderGraph(graph: HTMLElement, fullSlug: FullSlug) {
       alpha: 0,
       anchor: { x: 0.5, y: 1.2 },
       style: {
-        fontSize: fontSize * 15,
+        fontSize: nodeLabelSize(n),
         fill: computedStyleMap["--dark"],
         fontFamily: computedStyleMap["--bodyFont"],
       },

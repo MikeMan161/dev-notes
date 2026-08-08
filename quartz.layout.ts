@@ -1,6 +1,6 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
-import { GraphColorGroup } from "./quartz/components/Graph"
+import { GraphColorGroup, GraphSizeGroup } from "./quartz/components/Graph"
 
 // Graph node colors, mirroring the color groups in content/.obsidian/graph.json.
 // Paths are slug prefixes; first match wins, so hubs are listed before the
@@ -65,6 +65,26 @@ const graphColorGroups: GraphColorGroup[] = [
   },
 ]
 
+// Node sizing, layered on top of the link-count baseline. Same path matching as
+// the color groups above: first match wins, so narrower paths come first.
+// The project is the reason anyone is here; the NeetCode set is the biggest
+// cluster by file count and would otherwise dominate the graph on volume alone.
+const graphSizeGroups: GraphSizeGroup[] = [
+  // the landing page and the project's own hub notes
+  {
+    scale: 2.1,
+    paths: ["/", "Project Notes/Finance Project Overview", "Project Notes/To review list"],
+  },
+  // everything else in the project
+  { scale: 1.6, paths: ["Project Notes", "My AI Workflow"] },
+  // NeetCode entry points stay findable
+  { scale: 0.9, paths: ["Neetcode/Neetcode 150", "Neetcode/Review Queue"] },
+  // ...but the 170 individual problems recede
+  { scale: 0.5, paths: ["Neetcode"] },
+  // reference material, deliberately quiet
+  { scale: 0.8, paths: ["Coding Tips"] },
+]
+
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
@@ -72,8 +92,9 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
+      GitHub: "https://github.com/MikeMan161",
+      LinkedIn: "https://www.linkedin.com/in/riveramike/",
+      Email: "mailto:michael.a.rivera.dev@gmail.com",
     },
   }),
 }
@@ -106,8 +127,8 @@ export const defaultContentPageLayout: PageLayout = {
   ],
   right: [
     Component.Graph({
-      localGraph: { colorGroups: graphColorGroups },
-      globalGraph: { colorGroups: graphColorGroups },
+      localGraph: { colorGroups: graphColorGroups, sizeGroups: graphSizeGroups },
+      globalGraph: { colorGroups: graphColorGroups, sizeGroups: graphSizeGroups },
     }),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),

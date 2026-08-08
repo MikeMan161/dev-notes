@@ -16,6 +16,17 @@ export interface GraphColorGroup {
   paths: string[]
 }
 
+/**
+ * Scales a set of nodes up or down relative to the link-count baseline, so a
+ * section can be emphasized or pushed back regardless of how densely it links.
+ * `paths` match exactly like `GraphColorGroup`; `scale` multiplies the node
+ * radius (and, dampened, its label).
+ */
+export interface GraphSizeGroup {
+  scale: number
+  paths: string[]
+}
+
 export interface D3Config {
   drag: boolean
   zoom: boolean
@@ -31,6 +42,7 @@ export interface D3Config {
   focusOnHover?: boolean
   enableRadial?: boolean
   colorGroups?: GraphColorGroup[]
+  sizeGroups?: GraphSizeGroup[]
 }
 
 interface GraphOptions {
@@ -54,6 +66,7 @@ const defaultOptions: GraphOptions = {
     focusOnHover: false,
     enableRadial: false,
     colorGroups: [],
+    sizeGroups: [],
   },
   globalGraph: {
     drag: true,
@@ -70,6 +83,7 @@ const defaultOptions: GraphOptions = {
     focusOnHover: true,
     enableRadial: true,
     colorGroups: [],
+    sizeGroups: [],
   },
 }
 
