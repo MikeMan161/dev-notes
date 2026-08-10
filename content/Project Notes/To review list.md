@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-08-07 16:53
+lastmod: 2026-08-09 18:58
 date: 2026-07-08 15:26
 ---
 # Review Queue: sorted by priority
@@ -33,11 +33,11 @@ date: 2026-07-08 15:26
   localStorage + rehydrate on mount to ship. (httpOnly migration is
   post-deploy — see below.) [[Token Persistence]]
 - [ ] **Implement every other resource**: This goes hand in hand with the next point
-- [ ] **Implement shadcn sidebar** Adding a sidebar would make this 6+ page app much easier for the user to navigate through. 
+- [x] **Implement shadcn sidebar** Adding a sidebar would make this 6+ page app much easier for the user to navigate through. 
 - [x] Create a sign up page, seed the four buckets on signup
-- [ ] Resolve and implement the debt into fixed costs feed
+- [x] Resolve and implement the debt into fixed costs feed
 - [ ] Implement a DELETE user route
-- [ ] **Replace the bucket-editing loop with a single transactional endpoint.** The editing page currently saves by PATCHing all four buckets in a client-side loop, so a mid-loop failure leaves some buckets saved and others not,a user could end up with a half-applied plan they never chose (e.g. a random 87% total from a partial save, not a deliberate one). Fix: one batch endpoint (e.g. `PATCH /buckets`) that accepts all four percentage/threshold updates and commits them in a single transaction, so it's all-or-nothing. Same atomicity principle already applied to registration seeding (`flush → seed → one commit`); the editing path is currently on the wrong side of it. Not a data-corruption risk today (Pydantic still validates each request), but a real coherence gap once bucket editing is used by actual users.
+- [x] **Replace the bucket-editing loop with a single transactional endpoint.** The editing page currently saves by PATCHing all four buckets in a client-side loop, so a mid-loop failure leaves some buckets saved and others not,a user could end up with a half-applied plan they never chose (e.g. a random 87% total from a partial save, not a deliberate one). Fix: one batch endpoint (e.g. `PATCH /buckets`) that accepts all four percentage/threshold updates and commits them in a single transaction, so it's all-or-nothing. Same atomicity principle already applied to registration seeding (`flush → seed → one commit`); the editing path is currently on the wrong side of it. Not a data-corruption risk today (Pydantic still validates each request), but a real coherence gap once bucket editing is used by actual users.
 After rereading *I will teach you to be rich*, I came to a big realization about the whole model of the app, something that i need to restructure the backend to reflect in the frontend. See more here: [[Design Changes]]
 
 
@@ -63,8 +63,7 @@ Smaller items surfaced alongside:
 - Consider `navigate("/", { replace: true })` for consistency with the line-36 `<Navigate replace />` guard, so the explicit redirect also avoids a dead-session history entry.
 
 ## POST-DEPLOY 
-*None of this blocks a working deployed app. Can wait weeks or months.
-Pick up one at a time, guilt-free.*
+*None of this blocks the app deployment. Can wait weeks or months.*
 
 **Auth hardening (Phase 2 — doubles as a CI/CD exercise)**
 - [ ] Migrate localStorage → httpOnly cookies + refresh-token flow.
