@@ -19,7 +19,7 @@ date: 2026-07-17 15:59
 optional: FRED API for economic benchmarks
 
 ## To do later before deployment:
-[[To review list]]
+[[To do list]]
 [[New User Onboarding (not critical at the moment, save for later)]]
 [[Homelab Plan]]
 [[Interview-prep questions about the Finance App]]

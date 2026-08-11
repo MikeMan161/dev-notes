@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-08-09 18:58
+lastmod: 2026-08-10 20:38
 date: 2026-07-08 15:26
 ---
 # Review Queue: sorted by priority
@@ -38,6 +38,9 @@ date: 2026-07-08 15:26
 - [x] Resolve and implement the debt into fixed costs feed
 - [ ] Implement a DELETE user route
 - [x] **Replace the bucket-editing loop with a single transactional endpoint.** The editing page currently saves by PATCHing all four buckets in a client-side loop, so a mid-loop failure leaves some buckets saved and others not,a user could end up with a half-applied plan they never chose (e.g. a random 87% total from a partial save, not a deliberate one). Fix: one batch endpoint (e.g. `PATCH /buckets`) that accepts all four percentage/threshold updates and commits them in a single transaction, so it's all-or-nothing. Same atomicity principle already applied to registration seeding (`flush → seed → one commit`); the editing path is currently on the wrong side of it. Not a data-corruption risk today (Pydantic still validates each request), but a real coherence gap once bucket editing is used by actual users.
+- [ ] Donut in the buckets page clips the over-allocated segment at high coverage
+- [ ] Manual/AI entry unlocks adding debts and savings goals
+- [ ] seed realistic demo data before deploy/demo so the spending by category chart and dashboard looks good for recruiters.
 After rereading *I will teach you to be rich*, I came to a big realization about the whole model of the app, something that i need to restructure the backend to reflect in the frontend. See more here: [[Design Changes]]
 
 
@@ -106,6 +109,7 @@ Smaller items surfaced alongside:
 - [ ] Bucket-to-bucket transfer (envelope step 3) — atomic debit/credit,
   recorded. Transfer button eventually lives in CardAction.
 - [ ] Allow users to login with username or email.
+- [ ] **Pace chart on the Transactions page** (answers "am I burning this envelope faster than the month is passing?",velocity, where the gauge only shows position; half-gone means nothing without knowing if it's the 5th or the 25th). Plots cumulative spend against a straight pace line (day 1 = $0 → last day = bucket limit); above the diagonal means ahead of pace, and the crossing point is the day you run out. Scoped bucket route shows one line + its pace line; unscoped `/Transactions` shows four cumulative lines (one per bucket), narrowing on category click. Fits the coaching stance,flags speed without blocking. Work: (1) filter to current month,`getTransactions` returns all history, so either filter client-side or add a date-range param to the endpoint (month scoping currently only lives in `services/buckets.py` via `now.replace(day=1)`); (2) sort by `transaction_date`, reduce to a running total, emit `{day, total}` points,the only real logic; (3) pace line is just two points, Recharts interpolates. Data model already supports it: month is the period, limit is monthly income × target_percentage.
   
 
 **Type/serialization cleanup (do with Decimal fix or later)**

@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-08-05 12:53
+lastmod: 2026-08-10 19:43
 date: 2026-07-29 14:32
 ---
 When I imagine what the main dashboard will look like, I look back to my reading of the ramit sethi book and I know exactly what it needs to look like. In the book, he talks about making an envelope system to target your "Big Wins". Essentially, allocate the money for certain categories liek eating out, shopping, rent, and so on. when you spend the money for that month, that's it. you can't spend more. you can dip into other envelopes,  but you'll have to cut back until you replenish that envelope. this is a good way of keeping spending simple and sustainable.
@@ -58,3 +58,5 @@ I like how the components are transparent. Also, I like the "just ask me anythin
 ![[Pasted image 20260729153810.png]]
 The only thing that caught my attention here is the color scheme, i like the black/white/red. Looks nice but I'm not sure if this is what I'd want it to look like
 
+![[Pasted image 20260810194112.png]]
+For this image, I like the simple black background, the red highlights on login and the privacy policy/terms of service, and the logo on the top left. I don't think I'll have an image on the right, i'll just keep it simple.

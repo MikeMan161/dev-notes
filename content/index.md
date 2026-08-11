@@ -23,7 +23,7 @@ Three notes that show how I actually work:
 
 **An AI-powered personal finance dashboard.** Not another expense tracker — it implements Ramit Sethi's Conscious Spending Plan as an actual system: income splits into four fixed envelopes, transactions roll up against them, and an LLM layer parses natural language into structured transactions.
 
-Currently in development. Deploying to AWS when the [[To review list|must-fix list]] is clear.
+Currently in development. Deploying to AWS when the [[To do list|must-fix list]] is clear.
 
 | Layer | Stack | Notes |
 |---|---|---|
@@ -37,7 +37,7 @@ Currently in development. Deploying to AWS when the [[To review list|must-fix li
 
 ### Decisions and problems worth reading
 
-- [[To review list]] — how I triage. Every known issue in the app, sorted by whether it actually blocks a deploy. Includes the FK-ownership hole I found where a client-supplied ID reached `db.commit()` unverified.
+- [[To do list]] — how I triage. Every known issue in the app, sorted by whether it actually blocks a deploy. Includes the FK-ownership hole I found where a client-supplied ID reached `db.commit()` unverified.
 - [[SQL Aggregation]] — I needed spending totals per envelope. I wrote the raw SQL first, then translated it to SQLAlchemy, so I'd understand the query I was asking the ORM to build.
 - [[Authentication]] and [[Token Persistence]] — JWT auth, and why the token living only in React state was a bug.
 - [[I will teach you to be rich chapter 4 conscious spending]] — the product research the whole data model comes from.
