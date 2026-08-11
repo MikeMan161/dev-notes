@@ -2,7 +2,7 @@
 lastmod: 2026-08-11 10:21
 date: 2026-08-11 10:19
 ---
-Private reference — the technical knowledge behind working effectively with LLMs, both as development tools and as components inside software. Study material for interviews and for building the AI layer in Jot.
+The technical side of working with LLMs — both as development tools and as components inside the software I build. This is the reference I keep while designing Jot's AI layer.
 ## The three levels of AI usage in development
 
 From baseline to how senior engineers operate:

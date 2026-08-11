@@ -11,7 +11,7 @@ const graphColorGroups: GraphColorGroup[] = [
     color: "#e0a800",
     paths: [
       "/",
-      "My AI Workflow",
+      "How I Engineer with AI",
       "Neetcode/Neetcode 150",
       "Neetcode/Review Queue",
       "Project Notes/To review list",
@@ -76,7 +76,7 @@ const graphSizeGroups: GraphSizeGroup[] = [
     paths: ["/", "Project Notes/Finance Project Overview", "Project Notes/To review list"],
   },
   // everything else in the project
-  { scale: 1.6, paths: ["Project Notes", "My AI Workflow"] },
+  { scale: 1.6, paths: ["Project Notes", "How I Engineer with AI"] },
   // NeetCode entry points stay findable
   { scale: 0.9, paths: ["Neetcode/Neetcode 150", "Neetcode/Review Queue"] },
   // ...but the 170 individual problems recede

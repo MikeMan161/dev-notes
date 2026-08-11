@@ -1,6 +1,6 @@
 ---
 title: Michael Rivera
-description: CS student building a full-stack, AI-integrated personal finance app. These are the working notes behind it — architecture decisions, bugs I caught, and what I changed my mind about.
+description: CS student building Jot, a full-stack, AI-integrated personal finance app. These are the working notes behind it — architecture decisions, bugs I caught, and what I changed my mind about.
 ---
 
 I'm a CS student at the University of North Florida, graduating May 2027. I build full-stack products with AI wired into them, not bolted on the side.
@@ -17,11 +17,11 @@ Three notes that show how I actually work:
 
 **[[Bucket Editing Transactional Endpoint|Finding a partial-write bug, then finding the class of bug behind it]]** — The bucket editor saved by firing four sequential PATCHes. If the third one failed, the first two were already committed and the server held a spending plan the user never approved. The fix was one transactional PUT — but the real finding was that *every* PATCH route I'd written was a full-replace contract pretending to be a partial update.
 
-**[[How I Engineer with AI|How I use AI without letting it become a crutch]]** — My rule: I architect, both of us implement, it checks for holes I missed. I don't ship code I can't explain line by line. Also covers the agentic patterns I'm building with — function calling, context management, chains vs. agents.
+**[[How I Engineer with AI]]** — I used to be wary of building with AI because I'd fallen into vibe coding myself. This is where I landed instead: I own every architecture decision, AI accelerates execution once I understand the pattern, and I write the first instance of anything by hand before delegating the repetition. Everything gets reviewed against one standard — can I explain this and change it?
 
 ## The project
 
-**An AI-powered personal finance dashboard.** Not another expense tracker — it implements Ramit Sethi's Conscious Spending Plan as an actual system: income splits into four fixed envelopes, transactions roll up against them, and an LLM layer parses natural language into structured transactions.
+**Jot** is an AI-powered personal finance dashboard. It implements Ramit Sethi's Conscious Spending Plan as an actual system: income splits into four fixed envelopes, transactions roll up against them, and an LLM layer parses natural language into structured transactions.
 
 Currently in development. Deploying to AWS when the [[To do list|must-fix list]] is clear.
 
