@@ -1,6 +1,8 @@
 ---
 lastmod: 2026-08-10 19:43
 date: 2026-07-29 14:32
+aliases:
+  - ui-notes
 ---
 When I imagine what the main dashboard will look like, I look back to my reading of the ramit sethi book and I know exactly what it needs to look like. In the book, he talks about making an envelope system to target your "Big Wins". Essentially, allocate the money for certain categories liek eating out, shopping, rent, and so on. when you spend the money for that month, that's it. you can't spend more. you can dip into other envelopes,  but you'll have to cut back until you replenish that envelope. this is a good way of keeping spending simple and sustainable.
 
@@ -28,7 +30,7 @@ If the bucket/Envelope goes negative, I think it'd look really cool if the bar g
 - Dark mode is a primary design surface for dev tools, where one accent color and strict contrast matter more than the theme toggle
 - AI-native dashboards are a big trend in 2026 that summarize and prioritize instead of making users build charts (already in the plans)
 
-After using the following examples to design my frontend ([[UI Handwritten notes]]), I realized that some parts of the design seemed to not fit in with the envelope system, so I reread the book and I realized what i needed to do to fix these issues: [[Design Changes]]
+After using the following examples to sketch out my frontend on paper, I realized that some parts of the design seemed to not fit in with the envelope system, so I reread the book and I realized what i needed to do to fix these issues: [[Design Changes]]
 # UI Examples:
 - I used these links to find references to help me design the dashboard:
 	- (https://muz.li/blog/best-dashboard-design-examples-inspirations-for-2026/)

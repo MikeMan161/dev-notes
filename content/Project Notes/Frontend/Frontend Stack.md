@@ -17,7 +17,6 @@ Here's the stack for the frontend:
 - Tailwind CSS - helps style the app
 	- [[Tailwind Notes]]
 	- [[UI Notes]]
-	- [[UI Handwritten notes]]
 - shaden/ui - prebuilt components built on top of tailwind that i can copy to the repo and use
 - Recharts - Graphs and charts, for visualizations
 
