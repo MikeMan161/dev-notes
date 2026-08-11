@@ -17,7 +17,7 @@ Three notes that show how I actually work:
 
 **[[Bucket Editing Transactional Endpoint|Finding a partial-write bug, then finding the class of bug behind it]]** — The bucket editor saved by firing four sequential PATCHes. If the third one failed, the first two were already committed and the server held a spending plan the user never approved. The fix was one transactional PUT — but the real finding was that *every* PATCH route I'd written was a full-replace contract pretending to be a partial update.
 
-**[[My AI Workflow|How I use AI without letting it become a crutch]]** — My rule: I architect, both of us implement, it checks for holes I missed. I don't ship code I can't explain line by line. Also covers the agentic patterns I'm building with — function calling, context management, chains vs. agents.
+**[[How I Engineer with AI|How I use AI without letting it become a crutch]]** — My rule: I architect, both of us implement, it checks for holes I missed. I don't ship code I can't explain line by line. Also covers the agentic patterns I'm building with — function calling, context management, chains vs. agents.
 
 ## The project
 

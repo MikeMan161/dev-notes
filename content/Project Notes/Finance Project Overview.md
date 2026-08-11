@@ -36,7 +36,7 @@ refresh myself on database relationships (one to many, many to many)
 what typescript does over javascript (types)
 
 ## Claude strategy:
-[[My AI Workflow]]
+[[How I Engineer with AI]]
 Use chat for planning, concepts, answering questions on code/ideas
 Use code for direct file read/write, commands, and making edits/running installs
 use cowork for task and project management
