@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-08-10 20:38
+lastmod: 2026-08-12 17:19
 date: 2026-07-08 15:26
 ---
 # Review Queue: sorted by priority
@@ -44,9 +44,7 @@ date: 2026-07-08 15:26
 After rereading *I will teach you to be rich*, I came to a big realization about the whole model of the app, something that i need to restructure the backend to reflect in the frontend. See more here: [[Design Changes]]
 
 
-## SHIP-BLOCKING-ADJACENT (STUB-ABLE)
-*Rides along with the backend rework. Needed for correct data, but can be
-stubbed briefly while spent lands first. One focused session.*
+## SHIP-BLOCKING-ADJACENT (STUB-ABLE)*
 
 - [x] **Monthly window** — envelopes reset each month, so spent must be
   filtered to the current month. Add a `WHERE` on transaction date to the
@@ -57,8 +55,8 @@ stubbed briefly while spent lands first. One focused session.*
   shape). Can stub limit a little longer while nailing spent, but it's part
   of the same rework.
  - [x]  **MAJOR: `AuthError` handling extracted / per-page auth-failure coverage** — the `try/catch (AuthError) → clearToken() + navigate("/")` pattern currently lives ONLY in `Dashboard.tsx`. Works, but it's one instance of a pattern every authenticated page needs — a dead/expired token must clear auth and redirect from ANY page, not just Dashboard. As soon as the other pages (Income, Debts, Transactions, Savings Goals) make authenticated calls, each needs the identical catch block. Copy-pasting that catch into every page is the duplication signal. When it shows up (~2nd–3rd page), extract into an **AuthContext** that owns `token` / `clearToken` / the auth-failure handler and exposes a single "handle auth failure" the pages call — keeps the API layer pure (no React/routing imports in `apiFetch`). Alternative: trigger logout from inside `apiFetch` via a registered callback, but that reintroduces the "API layer can't touch React state" problem — more machinery, only if context proves insufficient. Do NOT build now — one page is not yet duplication. Build when the copy-paste is real. → see Token Persistence
- - [ ] categories.tsx has a broken props/state and unused imports in components/pages.
- - [ ] input `label`/`name`/`autoComplete`, the `UserResponse` type gaps, and the catch-all route.
+ - [x] categories.tsx has a broken props/state and unused imports in components/pages.
+ - [x] input `label`/`name`/`autoComplete`, the `UserResponse` type gaps, and the catch-all route.
 
 Smaller items surfaced alongside:
 
@@ -76,6 +74,7 @@ Smaller items surfaced alongside:
 
 **Backend behavior / data-model questions**
 - [ ] Refactor api fetches into tanstack query
+- [ ] Add rate limiting (slowapi)
 - [ ] Review cascade relationships for hard/soft deletes (deleting a
   category shouldn't wipe all its transactions). Confirm FK behavior —
   want `ON DELETE SET NULL`, never CASCADE, on `transactions.category_id`.
@@ -137,3 +136,6 @@ Smaller items surfaced alongside:
   to plural if you prefer consistency.
 - [ ] `GET /savings-goals?bucket_id=` is the only filter among the three
   new resources; debts and income take no query params.
+
+**AWS cleanup**
+- [ ] Move EB secrets to AWS Secrets Manager
