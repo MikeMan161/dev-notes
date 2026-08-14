@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-08-12 17:19
+lastmod: 2026-08-13 09:59
 date: 2026-07-08 15:26
 ---
 # Review Queue: sorted by priority
@@ -32,7 +32,7 @@ date: 2026-07-08 15:26
   only in React state, so refresh logs the user out. Persist in
   localStorage + rehydrate on mount to ship. (httpOnly migration is
   post-deploy — see below.) [[Token Persistence]]
-- [ ] **Implement every other resource**: This goes hand in hand with the next point
+- [x] **Implement every other resource**: This goes hand in hand with the next point
 - [x] **Implement shadcn sidebar** Adding a sidebar would make this 6+ page app much easier for the user to navigate through. 
 - [x] Create a sign up page, seed the four buckets on signup
 - [x] Resolve and implement the debt into fixed costs feed
