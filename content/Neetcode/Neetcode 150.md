@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-07-27 19:58
+lastmod: 2026-08-19 08:21
 date: 2026-06-20 22:00
 ---
 I'm practicing the Neetcode 150 every day to get experience solving complicated computing problems

@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-08-18 12:40
+lastmod: 2026-08-21 15:29
 date: 2026-07-26 22:00
 ---
 ## Tracker
@@ -7,8 +7,8 @@ date: 2026-07-26 22:00
 | Problem                              | Last Solved | Attempt 1 | Attempt 2 | Attempt 3 | Attempt 4 | Attempt 5 |
 | ------------------------------------ | ----------- | --------- | --------- | --------- | --------- | --------- |
 | [[Reverse Linked List]]              | 8/18        | :)        |           |           |           |           |
-| [[Merge Two Sorted Lists]]           |             |           |           |           |           |           |
-| [[Linked List Cycle]]                |             |           |           |           |           |           |
+| [[Merge Two Sorted Lists]]           | 8/20        | :)        |           |           |           |           |
+| [[Linked List Cycle]]                | 8/21        | :)        |           |           |           |           |
 | [[Reorder List]]                     |             |           |           |           |           |           |
 | [[Remove Nth Node From End of List]] |             |           |           |           |           |           |
 | [[Copy List With Random Pointer]]    |             |           |           |           |           |           |
