@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-08-28 18:09
+lastmod: 2026-08-29 19:00
 date: 2026-08-27 11:22
 ---
 ## Tracker
@@ -8,7 +8,7 @@ date: 2026-08-27 11:22
 | ------------------------------------------------------------- | ----------- | --------- | --------- | --------- | --------- | --------- |
 | [[Invert Binary Tree]]                                        | 08/28       | :)        |           |           |           |           |
 | [[Maximum Depth of Binary Tree]]                              | 08/28       | :/        |           |           |           |           |
-| [[Diameter of Binary Tree]]                                   |             |           |           |           |           |           |
+| [[Diameter of Binary Tree]]                                   | 08/29       | :(        |           |           |           |           |
 | [[Balanced Binary Tree]]                                      |             |           |           |           |           |           |
 | [[Same Tree]]                                                 |             |           |           |           |           |           |
 | [[Subtree of Another Tree]]                                   |             |           |           |           |           |           |
