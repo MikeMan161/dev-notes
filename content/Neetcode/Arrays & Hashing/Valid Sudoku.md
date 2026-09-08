@@ -1,10 +1,10 @@
 ---
 date: 2026-07-13 22:00
-lastmod: 2026-07-19 14:35
+lastmod: 2026-09-07 09:35
 topic: Arrays & Hashing
 url: https://neetcode.io/problems/valid-sudoku/question?list=neetcode150
 interval: 3
-last-solved: 2026-07-19
+last-solved: 2026-09-06
 ---
 Given a 9x9 board (board), it is valid only if:
 - Each row must contain the digits 1-9 without duplicates
