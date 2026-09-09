@@ -1,10 +1,10 @@
 ---
 date: 2026-07-18 12:00
-lastmod: 2026-07-19 14:35
+lastmod: 2026-09-08 14:11
 topic: Two Pointers
 url: https://neetcode.io/problems/two-integer-sum-ii/question?list=neetcode150
-last-solved: 2026-07-19
-interval: 3
+last-solved: 2026-09-08
+interval: 21
 ---
 Given an array of integers `numbers` that is sorted in **non-decreasing order**.
 
@@ -20,3 +20,5 @@ we'd start with the indexes on opposite sides of the array. then, we calculate t
 
 Done! the only issue i had is that i didnt know what 1-indexed meant, so my results were off by 1. 1-indexed just means that the index starts at 1, not 0, so i had to adjust my output to compensate. other than that, i got it easily!
 
+## Attempt 1:
+So I didnt try this problem again until the middle of september (last time was july) so although I basically solved this one cold, it only took me 2 minutes and I solved it easily.

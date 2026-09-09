@@ -1,10 +1,10 @@
 ---
 date: 2026-07-18 12:00
-lastmod: 2026-07-19 14:36
+lastmod: 2026-09-08 19:25
 topic: Two Pointers
 url: https://neetcode.io/problems/max-water-container/question?list=neetcode150
-last-solved: 2026-07-19
-interval: 3
+last-solved: 2026-09-08
+interval: 21
 ---
 this problem gives us an array heights, where each heights\[i] represents the height of the ith bar.
 
@@ -22,3 +22,6 @@ I got the logic pretty easily! here's my final logic:
 4. do same calculation, compare values, overwrite if bigger
 
 Problem solved! my solution beats 100% on both runtime and memory! i'm very proud of this one, i got the solution very easily
+
+## Attempt 2:
+Got the approach perfectly, i just had some explanation issues with claude. The discarded pairs are capped at the shorter height with strictly smaller width, so none can beat what you just recorded
