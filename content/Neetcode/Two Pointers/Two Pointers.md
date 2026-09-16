@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-09-08 19:25
+lastmod: 2026-09-15 16:58
 date: 2026-09-01 15:54
 ---
 ## Tracker
@@ -10,4 +10,4 @@ date: 2026-09-01 15:54
 | [[Two Integer Sum 2]]         | 09/08       | :)        |           |           |           |           |
 | [[3Sum]]                      | 09/07       | :(        |           |           |           |           |
 | [[Container with most water]] | 09/08       | :)        |           |           |           |           |
-| [[Trapping Rain Water]]       |             |           |           |           |           |           |
+| [[Trapping Rain Water]]       | 09/15       | :(        |           |           |           |           |
