@@ -1,8 +1,8 @@
 ---
 date: 2026-06-23 12:40
-lastmod: 2026-07-21 13:33
+lastmod: 2026-09-16 10:10
 topic: Sliding Window
-last-solved: 2026-07-21
+last-solved: 2026-09-16
 interval: 3
 url: https://neetcode.io/problems/minimum-window-with-characters/question?list=neetcode150
 ---
@@ -14,3 +14,6 @@ okay, this problem was very difficult, and i had to rely on the solution video t
 
 # Attempt 2 Notes:
 - This time I was able to solve the logic on my own! The main issue that happened now is that I didn't write comments as i talked through the approach, so when it came time to code, I got lost in the implementation because i got tangled up in the details just kept track of in my head. This is a big problem I have to work on, but this is a good lesson as to why that's important
+
+## Attempt 3 notes:
+At any given moment, have is equal to the number of satisfied frequencies in the current window. So I haven't done this problem in two months so I was basically solving this problem cold. I walked myself into the correct solution, but I struggled with the have/need, I didn't come up with it naturally in the attempt. So we have have and need, everytime that we iterate teh right pointer and the running frequency is == t frequency, we increment have. when have = need, we know the window is valid. 

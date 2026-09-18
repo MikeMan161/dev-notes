@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-07-30 13:51
+lastmod: 2026-09-17 18:44
 date: 2026-07-13 22:00
 ---
 ## Tracker
@@ -12,7 +12,7 @@ date: 2026-07-13 22:00
 | [[Find Minimum in Rotated Sorted Array]] | 7/15        | :/        |           |           |           |           |
 | [[Search in Rotated Sorted Array]]       | 7/29        | :(        | :/        |           |           |           |
 | [[Time Based Key Value Store]]           | 7/20        | :/        |           |           |           |           |
-| [[Median of Two Sorted Arrays]]          | 7/24        | :(        |           |           |           |           |
+| [[Median of Two Sorted Arrays]]          | 9/17        | :(        | :(        |           |           |           |
 
 Binary search sounds simple, but the real devil is in the details. There are 3 most common binary search cases:
 - Find a number

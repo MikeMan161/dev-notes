@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-06-23 16:31
+lastmod: 2026-09-16 10:07
 date: 2026-05-21 22:00
 ---
 Sliding window is a two-pointer approach where one pointer leads and the other follows. The region between them is the "window". This technique is mainly used to solve subarray problems, such as finding the longest or shortest subarray that satisfies a given condition. 
@@ -48,5 +48,5 @@ After answering all 3, I can solve any sliding window problem.
 | [[Longest Substring Without Repeating Characters]] | 7/22        | :/        | :)        |           |           |           |
 | [[Longest Repeating Character Replacement]]        | 7/23        | :/        | :)        |           |           |           |
 | [[Permutation in String]]                          | 6/22        | :(        |           |           |           |           |
-| [[Minimum Window Substring]]                       | 7/21        | :(        | :(        |           |           |           |
-| [[Sliding Window Maximum]]                         | 6/24        | :/        |           |           |           |           |
+| [[Minimum Window Substring]]                       | 9/16        | :(        | :(        | :(        |           |           |
+| [[Sliding Window Maximum]]                         | 9/16        | :/        |           |           |           |           |

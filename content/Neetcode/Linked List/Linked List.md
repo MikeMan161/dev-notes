@@ -1,12 +1,12 @@
 ---
-lastmod: 2026-08-26 13:48
+lastmod: 2026-09-17 13:58
 date: 2026-07-26 22:00
 ---
 ## Tracker
 
 | Problem                              | Last Solved | Attempt 1 | Attempt 2 | Attempt 3 | Attempt 4 | Attempt 5 |
 | ------------------------------------ | ----------- | --------- | --------- | --------- | --------- | --------- |
-| [[Reverse Linked List]]              | 8/18        | :)        |           |           |           |           |
+| [[Reverse Linked List]]              | 9/17        | :)        | :)        |           |           |           |
 | [[Merge Two Sorted Lists]]           | 8/26        | :)        | :)        |           |           |           |
 | [[Linked List Cycle]]                | 8/26        | :)        | :)        |           |           |           |
 | [[Reorder List]]                     | 8/21        |           |           |           |           |           |

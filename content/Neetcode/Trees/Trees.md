@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-09-07 13:09
+lastmod: 2026-09-16 12:15
 date: 2026-08-27 11:22
 ---
 ## Tracker
@@ -17,7 +17,7 @@ date: 2026-08-27 11:22
 | [[Binary Tree Right Side View]]                               | 09/06       | :/        |           |           |           |           |
 | [[Count Good Nodes in Binary Tree]]                           | 09/07       | :)        |           |           |           |           |
 | [[Validate Binary Search Tree]]                               | 09/07       | :(        |           |           |           |           |
-| [[Kth Smallest Element in a BST]]                             |             |           |           |           |           |           |
-| [[Construct Binary Tree from Preorder and Inorder Traversal]] |             |           |           |           |           |           |
+| [[Kth Smallest Element in a BST]]                             | 09/16       | :(        |           |           |           |           |
+| [[Construct Binary Tree from Preorder and Inorder Traversal]] | 09/16       | :(        |           |           |           |           |
 | [[Binary Tree Maximum Path Sum]]                              |             |           |           |           |           |           |
 | [[Serialize and Deserialize Binary Tree]]                     |             |           |           |           |           |           |
