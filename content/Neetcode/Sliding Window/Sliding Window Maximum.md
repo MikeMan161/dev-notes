@@ -1,9 +1,9 @@
 ---
 date: 2026-06-23 22:04
-lastmod: 2026-07-24 11:16
+lastmod: 2026-09-18 13:36
 topic: Sliding Window
-last-solved: 2026-07-24
-interval: 3
+last-solved: 2026-09-18
+interval: 7
 url: https://neetcode.io/problems/sliding-window-maximum/question?list=neetcode150
 ---
 Clarifying questions: So for this question, I see the constraints already answer a few questions i have, like what if k is negative, and there are constraints for how big nums.length is and if negative numbers are included in nums.
@@ -16,4 +16,6 @@ I had a breakthrough! I was able to fully figure out the logic. So we use a mono
 [[Stacks]]
 
 # Attempt 2 Notes:
-I got the logic correctly, with the monotonic queue, but got lost in implementation. Need to review
+Got the approach correct, ran out of time to implement any code. the pattern is a monotonic deque. the trigger: you want the min/max of a window, and the window moves one step at a time.
+
+An element is dead when a bigger element arrives after it. bigger and younger means it outranks and outlives it. what survives is a strictly decreasing sequence by value, increasing by index, so the front is always the window's max.
