@@ -1,9 +1,9 @@
 ---
 date: 2026-07-13 13:35
-lastmod: 2026-07-27 12:19
+lastmod: 2026-09-19 12:28
 topic: Stacks
-last-solved: 2026-07-27
-interval: 3
+last-solved: 2026-09-19
+interval: 7
 url: https://neetcode.io/problems/daily-temperatures/question?list=neetcode150
 ---
 - Pattern: Monotonic stack (decreasing), traversed right to left
@@ -12,3 +12,6 @@ url: https://neetcode.io/problems/daily-temperatures/question?list=neetcode150
 
 # Attempt 2 Notes:
 This time, I wrote down my pseudocode, but i got all tripped up when trying to account for both equal temperatures, and when the stack is empty.
+
+## Attempt 3:
+this time i fully derived it! i got tripped up on 2 bugs that i did find, so it was a :/ rating, but a proud one
