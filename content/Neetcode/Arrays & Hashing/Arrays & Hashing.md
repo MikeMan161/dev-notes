@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-10-13 19:51
+lastmod: 2026-10-15 12:52
 date: 2026-08-23 22:00
 ---
 Overall, the main takeaway is that whenever you need fast lookups or dupliate detection, you could convert that array into a set or dictionary/hashmap first. this turns searches from O(n) to O(1), often eliminating the need to use nested loops
@@ -22,5 +22,5 @@ Patterns to remember:
 | [[Top K Frequent Elements]]      |             |           |           |           |           |           |
 | [[Encode and Decode Strings]]    | 8/28        | :(        | :/        |           |           |           |
 | [[Product of Array Except Self]] | 10/13       | :(        | :(        | :/        |           |           |
-| [[Valid Sudoku]]                 | 09/06       | :(        |           |           |           |           |
+| [[Valid Sudoku]]                 | 10/15       | :(        | :(        |           |           |           |
 | [[Longest Consecutive Sequence]] | 02/24       | :(        | :/        |           |           |           |

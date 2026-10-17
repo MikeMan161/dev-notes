@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-10-14 13:24
+lastmod: 2026-10-15 12:02
 date: 2026-09-22 22:00
 ---
 ## Tracker
@@ -10,7 +10,7 @@ date: 2026-09-22 22:00
 | [[Max Area of Island]]                                    | 09/29       | :/        |           |           |           |           |
 | [[Clone Graph]]                                           | 10/13       | :(        |           |           |           |           |
 | [[Walls and Gates]]                                       | 10/14       | :/        |           |           |           |           |
-| [[Rotting Oranges]]                                       |             |           |           |           |           |           |
+| [[Rotting Oranges]]                                       | 10/15       | :(        |           |           |           |           |
 | [[Pacific Atlantic Water Flow]]                           |             |           |           |           |           |           |
 | [[Surrounded Regions]]                                    |             |           |           |           |           |           |
 | [[Course Schedule]]                                       |             |           |           |           |           |           |
