@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-10-15 12:02
+lastmod: 2026-10-19 11:23
 date: 2026-09-22 22:00
 ---
 ## Tracker
@@ -11,8 +11,8 @@ date: 2026-09-22 22:00
 | [[Clone Graph]]                                           | 10/13       | :(        |           |           |           |           |
 | [[Walls and Gates]]                                       | 10/14       | :/        |           |           |           |           |
 | [[Rotting Oranges]]                                       | 10/15       | :(        |           |           |           |           |
-| [[Pacific Atlantic Water Flow]]                           |             |           |           |           |           |           |
-| [[Surrounded Regions]]                                    |             |           |           |           |           |           |
+| [[Pacific Atlantic Water Flow]]                           | 10/18       | :/        |           |           |           |           |
+| [[Surrounded Regions]]                                    | 10/19       | :/        |           |           |           |           |
 | [[Course Schedule]]                                       |             |           |           |           |           |           |
 | [[Course Schedule II]]                                    |             |           |           |           |           |           |
 | [[Graph Valid Tree]]                                      |             |           |           |           |           |           |

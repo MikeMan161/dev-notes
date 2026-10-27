@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-09-19 12:18
+lastmod: 2026-10-25 16:22
 date: 2026-06-24 22:00
 ---
 Both Queues and Stacks are "restricted operation" data structures. With Arrays and Linked Lists, you can perform CRUD operations on any indexed element as long as the index is within bounds. With Queues and Stacks, operations are restricted: A queue allows insertion at one end and removal from the other, a stack allows insertion and removal only at one end. 
@@ -16,7 +16,7 @@ Deque is a double-ended Queue
 | Problem                              | Last Solved | Attempt 1 | Attempt 2 | Attempt 3 | Attempt 4 | Attempt 5 |
 | ------------------------------------ | ----------- | --------- | --------- | --------- | --------- | --------- |
 | [[Valid Parentheses]]                | 7/28        | :)        | :)        |           |           |           |
-| [[Min Stack]]                        | 7/24        | :/        | :)        |           |           |           |
+| [[Min Stack]]                        | 10/25       | :/        | :)        | :)        |           |           |
 | [[Evaluate Reverse Polish Notation]] | 9/5         | :)        | :/        |           |           |           |
 | [[Daily Temperatures]]               | 09/18       | :(        | :(        | :/        |           |           |
 | [[Car Fleet]]                        | 7/13        | :)        |           |           |           |           |

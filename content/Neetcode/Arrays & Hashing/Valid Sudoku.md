@@ -1,6 +1,6 @@
 ---
 date: 2026-07-13 22:00
-lastmod: 2026-10-15 12:51
+lastmod: 2026-10-18 16:25
 topic: Arrays & Hashing
 url: https://neetcode.io/problems/valid-sudoku/question?list=neetcode150
 interval: 3

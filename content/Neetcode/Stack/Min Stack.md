@@ -1,9 +1,9 @@
 ---
 date: 2026-07-04 21:51
-lastmod: 2026-07-24 12:58
+lastmod: 2026-10-25 16:22
 topic: Stacks
-last-solved: 2026-07-24
-interval: 21
+last-solved: 2026-10-25
+interval: 60
 url: https://neetcode.io/problems/minimum-stack/question?list=neetcode150
 ---
 
