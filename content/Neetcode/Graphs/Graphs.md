@@ -1,5 +1,5 @@
 ---
-lastmod: 2026-10-19 11:23
+lastmod: 2026-10-27 18:08
 date: 2026-09-22 22:00
 ---
 ## Tracker
@@ -13,8 +13,8 @@ date: 2026-09-22 22:00
 | [[Rotting Oranges]]                                       | 10/15       | :(        |           |           |           |           |
 | [[Pacific Atlantic Water Flow]]                           | 10/18       | :/        |           |           |           |           |
 | [[Surrounded Regions]]                                    | 10/19       | :/        |           |           |           |           |
-| [[Course Schedule]]                                       |             |           |           |           |           |           |
-| [[Course Schedule II]]                                    |             |           |           |           |           |           |
+| [[Course Schedule]]                                       | 10/27       | :(        |           |           |           |           |
+| [[Course Schedule II]]                                    | 10/27       | :(        |           |           |           |           |
 | [[Graph Valid Tree]]                                      |             |           |           |           |           |           |
 | [[Number of Connected Components in an Undirected Graph]] |             |           |           |           |           |           |
 | [[Redundant Connection]]                                  |             |           |           |           |           |           |
