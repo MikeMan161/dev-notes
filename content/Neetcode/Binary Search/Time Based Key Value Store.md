@@ -1,10 +1,10 @@
 ---
 date: 2026-07-18 12:00
-lastmod: 2026-07-21 12:52
+lastmod: 2026-11-08 12:52
 topic: Binary Search
 url: https://neetcode.io/problems/time-based-key-value-store/question?list=neetcode150
-last-solved: 2026-07-20
-interval: 7
+last-solved: 2026-11-08
+interval: 3
 ---
 ## Clarifying questions
 

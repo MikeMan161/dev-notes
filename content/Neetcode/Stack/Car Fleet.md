@@ -1,9 +1,9 @@
 ---
 date: 2026-07-13 16:22
-lastmod: 2026-07-13 18:08
+lastmod: 2026-11-08 14:06
 topic: Stacks
-last-solved: 2026-07-13
-interval: 21
+last-solved: 2026-11-08
+interval: 3
 url: https://neetcode.io/problems/car-fleet/question?list=neetcode150
 ---
 - Pattern- another monotonic stack

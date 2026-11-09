@@ -1,9 +1,9 @@
 ---
 date: 2026-07-14 22:38
-lastmod: 2026-07-15 14:33
+lastmod: 2026-11-08 12:51
 topic: Binary Search
-last-solved: 2026-07-15
-interval: 7
+last-solved: 2026-11-08
+interval: 3
 url: https://neetcode.io/problems/eating-bananas/question?list=neetcode150
 ---
 - Key insight — binary search on the _answer space_, not an array. Eating rate `k` is monotonic: too slow = can't finish (`False`), fast enough = can (`True`). Left boundary search finds the smallest `k` that flips to `True`. When a `k` works, keep searching left (`right = mid - 1`) for a smaller one.

@@ -1,9 +1,9 @@
 ---
 date: 2026-07-14 10:40
-lastmod: 2026-07-14 13:09
+lastmod: 2026-11-08 15:13
 topic: Binary Search
-last-solved: 2026-07-14
-interval: 21
+last-solved: 2026-11-08
+interval: 7
 url: https://neetcode.io/problems/binary-search/question?list=neetcode150
 ---
 - Key insights: First problem with binary search! this is O(log n), since it has us continuously cutting the array in half to find the answer. I'm also using an approach where both sides are closed, so the while loop is left <= right, and the shrink motion is mid +- 1
