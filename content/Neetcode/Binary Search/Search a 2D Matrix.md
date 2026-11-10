@@ -1,9 +1,9 @@
 ---
 date: 2026-07-14 13:08
-lastmod: 2026-07-31 06:49
+lastmod: 2026-11-09 14:46
 topic: Binary Search
-last-solved: 2026-07-30
-interval: 21
+last-solved: 2026-11-09
+interval: 7
 url: https://neetcode.io/problems/search-2d-matrix/question?list=neetcode150
 ---
 - key insight: I used a binary search on a 2D matrix approach. using my [[Matrix Notes]] I was able to essentially treat the matrix as one 1-D array, searching through indices 0 to m\*n - 1 then do binary search on that. when i do the binary search, you can do row = mid // n , col = mid % n to get the coordinates for the middle (matrix\[row]\[col]). 

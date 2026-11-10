@@ -1,8 +1,8 @@
 ---
 date: 2026-07-18 12:00
-lastmod: 2026-07-18 12:00
+lastmod: 2026-11-09 14:14
 topic: Two Pointers
-last-solved: 2026-07-14
+last-solved: 2026-11-09
 interval: 21
 url: https://neetcode.io/problems/is-palindrome/question?list=neetcode150
 ---

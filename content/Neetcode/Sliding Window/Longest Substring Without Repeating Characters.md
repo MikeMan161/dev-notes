@@ -1,9 +1,9 @@
 ---
 date: 2026-06-20 18:12
-lastmod: 2026-07-22 15:49
+lastmod: 2026-11-09 13:59
 topic: Sliding Window
-last-solved: 2026-07-22
-interval: 21
+last-solved: 2026-11-09
+interval: 3
 url: https://neetcode.io/problems/longest-substring-without-duplicates/question?list=neetcode150
 ---
 
@@ -21,3 +21,8 @@ final implementation:
 
 # Attempt 2 Notes:
 I was able to do this problem completely independently! No help, tips, nothing, I solved the logic and implementation all on my own. Great attempt on my end.
+
+## Attempt 3 Notes:
+remember this:
+
+dictionary\[s\[right]] = dictionary.get(s\[right],0) + 1
