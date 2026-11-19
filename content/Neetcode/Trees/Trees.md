@@ -1,14 +1,14 @@
 ---
-lastmod: 2026-10-19 12:03
+lastmod: 2026-11-11 17:42
 date: 2026-08-27 11:22
 ---
 ## Tracker
 
 | Problem                                                       | Last Solved | Attempt 1 | Attempt 2 | Attempt 3 | Attempt 4 | Attempt 5 |
 | ------------------------------------------------------------- | ----------- | --------- | --------- | --------- | --------- | --------- |
-| [[Invert Binary Tree]]                                        | 08/28       | :)        |           |           |           |           |
+| [[Invert Binary Tree]]                                        | 11/10       | :)        | :/        |           |           |           |
 | [[Maximum Depth of Binary Tree]]                              | 08/28       | :/        |           |           |           |           |
-| [[Diameter of Binary Tree]]                                   | 08/31       | :(        | :)        |           |           |           |
+| [[Diameter of Binary Tree]]                                   | 11/11       | :(        | :)        | :)        |           |           |
 | [[Balanced Binary Tree]]                                      | 08/31       | :)        |           |           |           |           |
 | [[Same Tree]]                                                 | 08/31       | :/        |           |           |           |           |
 | [[Subtree of Another Tree]]                                   | 09/02       | :/        |           |           |           |           |

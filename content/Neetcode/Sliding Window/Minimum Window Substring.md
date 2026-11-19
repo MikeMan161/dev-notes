@@ -1,8 +1,8 @@
 ---
 date: 2026-06-23 12:40
-lastmod: 2026-09-16 10:10
+lastmod: 2026-11-12 14:20
 topic: Sliding Window
-last-solved: 2026-09-16
+last-solved: 2026-11-12
 interval: 3
 url: https://neetcode.io/problems/minimum-window-with-characters/question?list=neetcode150
 ---
